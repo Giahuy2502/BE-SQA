@@ -50,9 +50,9 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query(value = """
                         SELECT new com.doan2025.webtoeic.dto.response.UserResponse(
-                                        u.firstName, u.lastName, u.phone, u.address,
+                                        u.id, u.firstName, u.lastName, u.phone, u.address,
                                         u.dob, u.gender, u.avatarUrl, u.isActive, u.isDelete,
-                                        s.education, s.major, u.createdAt, u.updatedAt, u.code)
+                                        s.education, s.major, u.role, u.createdAt, u.updatedAt, u.code)
                         FROM User u
                         LEFT JOIN u.student s
                         LEFT JOIN u.consultant c
@@ -60,7 +60,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
                         LEFT JOIN u.manager m
                         WHERE u.email = :email
                             AND u.isActive = true AND u.isDelete = false
-            
+
             """)
     Optional<UserResponse> findUser(String email);
 
@@ -72,15 +72,15 @@ public interface UserRepository extends JpaRepository<User, Long> {
                         LEFT JOIN u.teacher t
                         LEFT JOIN u.manager m
                         WHERE u.isActive = true AND u.isDelete = false
-            
+
             """)
     List<User> findUserOnlyStudent();
 
     @Query(value = """
                         SELECT new com.doan2025.webtoeic.dto.response.UserResponse(
-                                        u.firstName, u.lastName, u.phone, u.address,
+                                        u.id, u.firstName, u.lastName, u.phone, u.address,
                                         u.dob, u.gender, u.avatarUrl, u.isActive, u.isDelete,
-                                        s.education, s.major, u.createdAt, u.updatedAt, u.code)
+                                        s.education, s.major, u.role, u.createdAt, u.updatedAt, u.code)
                         FROM User u
                         LEFT JOIN u.student s
                         LEFT JOIN u.consultant c
@@ -88,7 +88,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
                         LEFT JOIN u.manager m
                         WHERE u.id = :#{#request.id}
                             AND u.isActive = true AND u.isDelete = false
-            
+
             """)
     Optional<UserResponse> findUserById(UserRequest request);
 
