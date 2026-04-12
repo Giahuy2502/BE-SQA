@@ -69,6 +69,19 @@ class GlobalExceptionHandlerTest {
         assertEquals(ResponseCode.UNCATEGORIZED_EXCEPTION.getCode(), response.getBody().getCode());
     }
 
+    // UTC-GE-005: WebToeicException với mã IS_NULL trả đúng HTTP status từ ResponseCode
+    @Test
+    void handlingWebToeicException_shouldUseStatusFromResponseCode_whenIsNull() {
+        GlobalExceptionHandler handler = new GlobalExceptionHandler();
+        WebToeicException ex = new WebToeicException(ResponseCode.IS_NULL, ResponseObject.TOKEN);
+
+        @SuppressWarnings("rawtypes")
+        ResponseEntity<ApiResponse> response = handler.handlingWebToeicException(ex);
+
+        assertEquals(ResponseCode.IS_NULL.getStatusCode().value(), response.getStatusCode().value());
+        assertEquals(ResponseCode.IS_NULL.getCode(), response.getBody().getCode());
+    }
+
     // UTC-GE-004: Khi validation key không map được vào ResponseCode -> fallback INVALID_KEY
     @Test
     void handlingValidation_shouldReturnInvalidKey_whenEnumKeyUnknown() throws NoSuchMethodException {

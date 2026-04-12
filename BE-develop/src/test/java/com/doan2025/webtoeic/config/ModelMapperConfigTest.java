@@ -22,5 +22,17 @@ class ModelMapperConfigTest {
         assertNotNull(mapper);
         assertEquals(MatchingStrategies.STANDARD, mapper.getConfiguration().getMatchingStrategy());
     }
+
+    /**
+     * TCID: UTC-MM-002
+     * Mỗi lần gọi bean factory tạo instance mới (không singleton trong config test).
+     */
+    @Test
+    void modelMapper_shouldCreateNewInstancePerCall() {
+        ModelMapperConfig config = new ModelMapperConfig();
+        ModelMapper first = config.modelMapper();
+        ModelMapper second = config.modelMapper();
+        org.junit.jupiter.api.Assertions.assertNotSame(first, second);
+    }
 }
 
