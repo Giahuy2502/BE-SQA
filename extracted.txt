@@ -1,0 +1,2219 @@
+   
+ 
+   
+ 
+HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG 
+KHOA CÔNG NGHỆ THÔNG TIN 1 
+ 
+ 
+  
+       ĐỒ ÁN TỐT NGHIỆP ĐẠI HỌC 
+ĐỀ TÀI: NỀN TẢNG QUẢN LÝ KHÓA HỌC VÀ  
+VẬN HÀNH TRUNG TÂM GIÁO DỤC TRỰC TUYỀN 
+LEARN-EZ 
+ 
+Sinh viên thực hiện: 
+                  Vũ Huy Hoàng:  
+                  Nguyễn Chí Huấn: 
+ 
+B21DCCN398 
+B21DCCN405 
+Giảng viên hướng dẫn:  Đặng Ngọc Hùng 
+Khóa: 2021 –2026 
+Hệ: Đại học chính quy 
+    
+ 
+ 
+Hà Nội, 12/2025 
+  
+
+Đồ án tốt nghiệp   
+2 
+ 
+LỜI CẢM ƠN 
+Trước tiên với tình cảm sâu sắc và chân thành nhất, cho phép chúng tôi được bày tỏ 
+lòng biết ơn đến tất cả các cá nhân và tổ chức đã tạo điều kiện hỗ trợ, giúp đỡ nhóm trong 
+suốt quá trình học tập và nghiên cứu đề tài này. 
+Với lòng biết ơn sâu sắc nhất,  chúng tôi xin gửi đến quý thầy cô ở Học viện Công 
+nghệ Bưu chính Viễn thông đã truyền đạt vốn kiến thức quý báu cho  chúng tôi trong suốt 
+quá trình học tập. Nhờ có những lời hướng dẫn, dạy bảo của  các thầy cô nên đồ án của 
+nhóm mới có thể hoàn thiện tốt đẹp. 
+Một lần nữa, chúng tôi xin chân thành cảm ơn thầy Đặng Ngọc Hùng đã giúp đỡ để 
+chúng tôi có thể hoàn thành tốt đồ án này trong thời gian qua. 
+Bước đầu đi vào thực hiện của chúng tôi còn hạn chế và còn nhiều bỡ ngỡ nên không 
+tránh khỏi những  thiếu sót, tôi rất mong nhận được những ý kiến đóng góp quý báu của 
+thầy để kiến thức của tôi trong lĩnh vực này được hoàn thiện hơn đồng thời có điều kiện bổ 
+sung, nâng cao ý thức của mình. 
+Chúng tôi xin chân thành cảm ơn! 
+  
+Đồ án tốt nghiệp   
+3 
+NHẬN XÉT, ĐÁNH GIÁ, CHO ĐIỂM 
+(Của giảng viên hướng dẫn) 
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+……………………………………………………………………………………………… 
+Điểm:………………………( Bằng Chữ: ………………………………………………..) 
+ Đồng ý/không đồng ý cho sinh viên bảo vệ trước hội đồng chấm tốt nghiệp ?  
+Hà Nội, ngày…. tháng…. năm 20.. 
+    CÁN BỘ - GIẢNG VIÊN HƯỚNG DẪN 
+ 
+ 
+ 
+ĐẶNG NGỌC HÙNG 
+  
+Đồ án tốt nghiệp   
+4 
+NHẬN XÉT, ĐÁNH GIÁ, CHO ĐIỂM 
+(Của giảng viên phản biện) 
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+………………………………………………………………………………………………
+……………………………………………………………………………………………… 
+Điểm:………………………(Bằng Chữ:………………………………………………….) 
+ Đồng ý/không đồng ý cho sinh viên bảo vệ trước hội đồng chấm tốt nghiệp?  
+         Hà Nội, ngày…. tháng…. năm 20..  
+    CÁN BỘ - GIẢNG VIÊN PHẢN BIỆN 
+  
+Đồ án tốt nghiệp   
+5 
+LỜI NÓI ĐẦU 
+Trong kỷ nguyên số hóa toàn cầu, giáo dục trực tuyến đã chuyển mình từ một giải 
+pháp thay thế trở thành xu thế tất yếu của nền giáo dục hiện đại. Nhu cầu học tập không 
+giới hạn về không gian và thời gian đang đặt ra những thách thức  lớn trong công tác quản 
+lý vận hành tại các trung tâm giáo dục: từ việc kiểm soát luồng quản lý hồ sơ học viên, đến 
+việc đổi mới phương pháp đánh giá năng lực người học. 
+Nhận thức được nhu cầu cấp thiết đó, nhóm sinh viên thực hiện đã quyết định lựa 
+chọn và phát triển đề tài: "Nền tảng quản lý khóa học và vận hành trung tâm giáo dục trực 
+tuyến Learn-EZ". 
+Learn-EZ được thiết kế không chỉ đơn thuần là một website thương mại điện tử 
+phục vụ việc mua bán khóa học, mà hướng tới một hệ sinh thái quản trị giáo dục toàn diện. 
+Hệ thống tập trung giải quyết ba bài toán cốt lõi: 
+1. Tự động hóa quy trình vận hành:  Số hóa toàn bộ luồng nghiệp vụ từ ghi danh, 
+xếp lớp, điểm danh đến thanh toán học phí trực tuyến qua cổng VNPay, đảm bảo tính chính 
+xác và minh bạch tài chính. 
+2. Cá nhân hóa trải nghiệm học tập : Cung cấp môi trường tương tác đa chiều giữa 
+Giáo viên và Học viên thông qua các công cụ quản lý lớp học, bài giảng video và hệ thống 
+thông báo thời gian thực. 
+3. Ứng dụng công nghệ tiên tiến:  Tiên phong trong việc tíc h hợp Trí tuệ nhân tạo 
+(Generative AI) vào phân hệ khảo thí, giúp tự động hóa quy trình bóc tách và số hóa đề thi 
+từ văn bản thô, giảm thiểu tối đa gánh nặng hành chính cho đội ngũ giảng dạy. 
+Báo cáo đồ án này sẽ trình bày chi tiết quy trình xây dựng hệ th ống Learn-EZ, bắt 
+đầu từ việc phân tích nghiệp vụ, thiết kế kiến trúc hệ thống trên nền tảng Java Spring Boot 
+và ReactJS, cho đến quy trình kiểm thử và đánh giá hiệu năng thực tế. 
+Mặc dù đã nỗ lực hết mình để đưa ra một giải pháp công nghệ hoàn thiện nhất, 
+nhưng với kiến thức và kinh nghiệm thực tế còn hạn chế, sản phẩm chắc chắn không tránh 
+khỏi những khiếm khuyết. Kính mong nhận được những ý kiến đóng góp quý báu từ quý 
+thầy cô và các chuyên gia để hệ thống ngày càng hoàn thiện và có giá trị thực tiễn cao hơn.   
+Đồ án tốt nghiệp   
+6 
+PHỤ LỤC 
+ 
+LỜI CẢM ƠN ...................................................................................................................... 2 
+LỜI NÓI ĐẦU ..................................................................................................................... 5 
+PHỤ LỤC ............................................................................................................................ 6 
+PHÂN CÔNG CÔNG VIỆC ............................................................................................... 8 
+LINK SOURSE VÀ SẢN PHẨM ....................................................................................... 8 
+KÝ HIỆU VÀ THUẬT NGỮ .............................................................................................. 9 
+DANH MỤC HÌNH ẢNH ................................................................................................. 10 
+DANH MỤC BẢNG BIỂU ............................................................................................... 12 
+CHƯƠNG 1: TỔNG QUAN VÀ GIỚI THIỆU ĐỀ TÀI .................................................. 15 
+1. Lý do chọn đề tài ....................................................................................................... 15 
+2. Đối tượng nghiên cứu và phạm vi nghiên cứu .......................................................... 16 
+3. Kết quả dự kiến .......................................................................................................... 17 
+4. Công nghệ sử dụng .................................................................................................... 19 
+5. Kết luận ...................................................................................................................... 25 
+CHƯƠNG 2: PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG ................................................ 26 
+1. Tổng quan về nghiệp vụ ............................................................................................ 26 
+2. Phân tích yêu cầu chức năng ..................................................................................... 26 
+3. Phân tích yêu cầu phi chức năng ............................................................................... 40 
+4.  Phân tích biểu đồ lớp phân tích ................................................................................ 41 
+5.  Phân tích biểu đồ tuần tự .......................................................................................... 55 
+6.  Thiết kế hệ thống cơ sở dữ liệu ................................................................................ 66 
+Đồ án tốt nghiệp   
+7 
+7.  Kết luận ..................................................................................................................... 68 
+CHƯƠNG 3: CÀI ĐẶT VÀ KIỂM THỬ HỆ THỐNG .................................................... 69 
+1.  Kiến trúc hệ thống và môi trường triển khai ............................................................ 69 
+2.  Cài đặt và Triển khai Phân hệ Backend .................................................................... 70 
+3.  Cài đặt và Triển khai Phân hệ Frontend ................................................................... 72 
+4.  Thử nghiệm và đánh giá ........................................................................................... 78 
+5.  Kết luận ..................................................................................................................... 82 
+KẾT LUẬN ....................................................................................................................... 84 
+TÀI LIỆU THAM KHẢO ................................................................................................. 86 
+ 
+  
+Đồ án tốt nghiệp   
+8 
+PHÂN CÔNG CÔNG VIỆC 
+Tên module Frontend Backend 
+Quản trị và phân quyền Vũ Huy Hoàng Nguyễn Chí Huấn 
+Tin tức Vũ Huy Hoàng Nguyễn Chí Huấn 
+Khóa học online Vũ Huy Hoàng Nguyễn Chí Huấn 
+Quản lý lớp học offline Vũ Huy Hoàng Nguyễn Chí Huấn 
+Ngân hàng đề Vũ Huy Hoàng Nguyễn Chí Huấn 
+LINK SOURSE VÀ SẢN PHẨM 
+Link sourse:  
+• Frontend: https://github.com/DoAn-2025/FE 
+• Backend: https://github.com/DoAn-2025/BE 
+Link sản phẩm:  
+• Sản phẩm: https://fe-q0rg.onrender.com/ 
+  
+Đồ án tốt nghiệp   
+9 
+KÝ HIỆU VÀ THUẬT NGỮ 
+Ký hiệu Giải thích 
+AI Trí tuệ nhân tạo 
+API Giao diện cho các phần mềm giao tiếp với nhau 
+Endpoint Một địa chỉ cụ thể của API 
+request Yêu cầu gửi từ client → server 
+Response Phản hồi từ server → client 
+Client Bên gửi request 
+Server Bên xử lý request và trả response 
+Framework Bộ công cụ giúp code nhanh – chuẩn – dễ bảo trì 
+Frontend Phần người dùng nhìn và tương tác 
+Backend Phần xử lý logic, database, bảo mật 
+UML Ngôn ngữ vẽ sơ đồ thiết kế hệ thống 
+QR Mã vạch 2D lưu thông tin 
+Promt Engineering Cách viết câu lệnh để AI trả lời đúng và tốt hơn 
+Stateless Server không nhớ trạng thái client 
+JSON Định dạng dữ liệu nhẹ, phổ biến 
+RESTful API Chuẩn thiết kế API theo REST 
+Gateway Cổng trung gian giữa client và nhiều service 
+XML Định dạng dữ liệu cũ, nhiều thẻ 
+Controller Nhận request từ client 
+Service Xử lý logic nghiệp vụ 
+Repository Làm việc trực tiếp với database 
+HTTP Giao thức giao tiếp trên web 
+SQL Ngôn ngữ truy vấn database 
+SQL Injection Lỗ hổng bảo mật chèn SQL độc hại 
+ACID 4 tính chất giao dịch DB 
+CDN Mạng phân phối nội dung 
+Interceptor Thành phần chặn request/response để xử lý chung 
+JWT Token dùng để xác thực đăng nhập 
+Module Một khối chức năng độc lập 
+CRUD 4 thao tác cơ bản thêm sửa xóa tìm kiếm 
+SPA Web chỉ load 1 lần, sau đó gọi API 
+Component Khối giao diện tái sử dụng 
+DOM Cấu trúc cây của HTML 
+Index Dữ liệu giúp tìm kiếm nhanh trong DB 
+RAM Bộ nhớ tạm thời 
+JVM Máy ảo chạy Java 
+Token Chuỗi đại diện cho quyền truy cập 
+  
+Đồ án tốt nghiệp   
+10 
+DANH MỤC HÌNH ẢNH 
+Hình 1.1 Thực trạng và giải pháp ...................................................................................... 15 
+Hình 1.2 Phạm vi người dùng hệ thống ............................................................................. 17 
+Hình 1.3 Mô hình tổng quát .............................................................................................. 20 
+Hình 1.4 Cấu trúc phân rã component ............................................................................... 23 
+Hình 2.1 Tổng quan hệ thống ............................................................................................ 27 
+Hình 2.2 Biểu đồ lớp phân tích .......................................................................................... 42 
+Hình 2.3 Sơ đồ tuần tự usecase đăng nhập ........................................................................ 55 
+Hình 2.4 Sơ đồ tuần tự usecase quên mật khẩu ................................................................. 56 
+Hình 2.5 Sơ đồ tuần tự usecase thêm khóa học vào giỏ hàng ........................................... 57 
+Hình 2.6 Sơ đồ tuần tự usecase mua khóa học .................................................................. 57 
+Hình 2.7 Sơ đồ tuần tự usecase tạo mới lớp học ............................................................... 58 
+Hình 2.8 Sơ đồ tuần tự usecase thêm học sinh vào lớp học .............................................. 58 
+Hình 2.9 Sơ đồ tuần tự usecase tạo thông báo trong lớp học ............................................ 59 
+Hình 2.10 Sơ đồ tuần tự usecase nộp link bài tập trong thông báo ................................... 59 
+Hình 2.11 Sơ đồ tuần tự usecase xem danh sách học sinh đã nộp bài trong thông báo .... 60 
+Hình 2.12 Sơ đồ tuần tự usecase tạo mới ngân hàng đề .................................................... 60 
+Hình 2.13 Sơ đồ tuần tự usecase thêm câu hỏi vào ngân hàng đề..................................... 61 
+Hình 2.14 Sơ đồ tuần tự usecase thêm ngân hàng đề bằng đọc file kết hợp với AI.......... 61 
+Hình 2.15 Sơ đồ tuần tự usecase chuyển ngân hàng đề thành bài kiểm tra ...................... 62 
+Hình 2.16 Sơ đồ tuần tự usecase thêm mới bài kiểm tra ................................................... 62 
+Hình 2.17 Sơ đồ tuần tự usecase thêm câu hỏi vào bài kiểm tra ....................................... 63 
+Hình 2.18 Sơ đồ tuần tự usecase kéo bài kiểm tra về lớp học ........................................... 63 
+Hình 2.19 Sơ đồ tuần tự usecase làm bài kiểm tra trong lớp học ...................................... 64 
+Đồ án tốt nghiệp   
+11 
+Hình 2.20 Sơ đồ tuần tự usecase xem danh sách người nộp bài kiểm tra ......................... 64 
+Hình 2.21 Sơ đồ tuần tự usecase điểm danh lớp học......................................................... 65 
+Hình 2.22 Sơ đồ tuần tự usecase thống kê điểm danh các buổi học ................................. 65 
+Hình 2.23 Sơ đồ tuần tự usecase thêm lịch học mới cho lớp học ..................................... 65 
+Hình 2.24 Sơ đồ tuần tự usecase xem danh sách lịch học của lớp học ............................. 66 
+Hình 2.58: Thiết kế hệ thống cơ sở dữ liệu ....................................................................... 67 
+Hình 3.3 Tổ chức mã nguồn frontend................................................................................ 73 
+Hình 3.4 Giao diện trang chủ ............................................................................................ 74 
+Hỉnh 3.6 Giao diện phân tích ngân hàng đề bằng AI ........................................................ 75 
+Hình 3.7 Giao diện quản lý lớp học ................................................................................... 76 
+Hình 3.8 Giao diện điểm danh lớp học .............................................................................. 76 
+Hình 3.9 Giao diện xác nhận yêu cầu làm bài kiểm tra ..................................................... 77 
+Hình 3.10 Giao diện lịch sử đơn hàng ............................................................................... 77 
+Hình 3.12 Giao diện giỏ hàng của tôi ................................................................................ 78 
+  
+Đồ án tốt nghiệp   
+12 
+DANH MỤC BẢNG BIỂU 
+Bảng 2.1 Tổng quan usecase hệ thống .............................................................................. 29 
+Bảng 2.2 Usecase đăng nhập ............................................................................................. 30 
+Bảng 2.3 Usecase quên mật khẩu ...................................................................................... 30 
+Bảng 2.4 Usecase thên khóa học vào giỏ hàng ................................................................. 31 
+Bảng 2.5 Usecase mua khóa học ....................................................................................... 31 
+Bảng 2.6 Usecase tạo lớp học mới .................................................................................... 32 
+Bảng 2.7 Usecase thêm học sinh vào lớp học ................................................................... 32 
+Bảng 2.8 Usecase tạo thông báo trong lớp học ................................................................. 33 
+Bảng 2.9 Usecase nộp link bài bật trong thông báo lớp học ............................................. 33 
+Bảng 2.10 Usecase xem danh sách học sinh đã nộp bài trong thông báo ......................... 34 
+Bảng 2.11 Usecase tạo mới ngân hàng đề ......................................................................... 34 
+Bảng 2.12 Usecase thêm câu hỏi vào ngân hàng đề .......................................................... 35 
+Bảng 2.13 Usecase thêm ngân hàng đề bằng cách đọc file kết hợp cùng AI .................... 35 
+Bảng 2.14 Usecase chuyển ngân hàng đề thành bài kiểm tra ............................................ 36 
+Bảng 2.15 Usecase tạo mới bài kiểm tra ........................................................................... 36 
+Bảng 2.16 Usecase thêm câu hỏi vào bài kiểm tra ............................................................ 36 
+Bảng 2.17 Usecase kéo bài kiểm tra về lớp học ................................................................ 37 
+Bảng 2.18 Usecase làm bài kiểm tra trong lớp học ........................................................... 38 
+Bảng 2.19 Usecase xem danh sách người nộp trong bài kiểm tra ..................................... 38 
+Bảng 2.20 Usecase điểm danh học sinh ............................................................................ 39 
+Bảng 2.21 Usecase thống kê điểm danh các buổi học ....................................................... 39 
+Bảng 2.22 Usecase thêm lịch học mới cho lớp học ........................................................... 39 
+Bảng 2.23 Usecase xem danh sách lịch học của lớp học .................................................. 40 
+Đồ án tốt nghiệp   
+13 
+Bảng 2.24 Danh sách các lớp thực thể trong hệ thống ...................................................... 44 
+Bảng 2.25 Thông tin chi tiết lớp Answer .......................................................................... 44 
+Bảng 2.26 Thông tin chi tiết lớp AttachDocumentClass ................................................... 44 
+Bảng 2.27 Thông tin chi tiết lớp AttachDocumentLesson ................................................ 45 
+Bảng 2.28 Thông tin chi tiết lớp Attendance..................................................................... 45 
+Bảng 2.29 Thông tin chi tiết lớp CartItem......................................................................... 45 
+Bảng 2.30 Thông tin chi tiết lớp Class .............................................................................. 45 
+Bảng 2.31 Thông tin chi tiết lớp ClassMember................................................................. 46 
+Bảng 2.32 Thông tin chi tiết lớp ClassNotification ........................................................... 46 
+Bảng 2.33 Thông tin chi tiết lớp ClassSchedule ............................................................... 47 
+Bảng 2.34 Thông tin chi tiết lớp Consultant ..................................................................... 47 
+Bảng 2.35 Thông tin chi tiết lớp Course ........................................................................... 47 
+Bảng 2.36 Thông tin chi tiết lớp Enrollment ..................................................................... 47 
+Bảng 2.37 Thông tin chi tiết lớp ExplanationQuestion ..................................................... 48 
+Bảng 2.38 Thông tin chi tiết lớp ForgotPassword ............................................................. 48 
+Bảng 2.39 Thông tin chi tiết lớp InvalidatedToken .......................................................... 48 
+Bảng 2.40 Thông tin chi tiết lớp Lesson ........................................................................... 48 
+Bảng 2.41 Thông tin chi tiết lớp LessonComplete ............................................................ 49 
+Bảng 2.42 Thông tin chi tiết lớp Manager ......................................................................... 49 
+Bảng 2.43 Thông tin chi tiết lớp Notification ................................................................... 49 
+Bảng 2.44 Thông tin chi tiết lớp NotificationReciever ..................................................... 49 
+Bảng 2.45 Thông tin chi tiết lớp OrderDetail .................................................................... 50 
+Bảng 2.46 Thông tin chi tiết lớp Orders ............................................................................ 50 
+Bảng 2.47 Thông tin chi tiết lớp Post ................................................................................ 50 
+Đồ án tốt nghiệp   
+14 
+Bảng 2.48 Thông tin chi tiết lớp Question ........................................................................ 51 
+Bảng 2.49 Thông tin chi tiết lớp QuestionBank ................................................................ 51 
+Bảng 2.50 Thông tin chi tiết lớp QuestionQuiz................................................................. 51 
+Bảng 2.51 Thông tin chi tiết lớp Quiz ............................................................................... 51 
+Bảng 2.52 Thông tin chi tiết lớp RangeTopic ................................................................... 52 
+Bảng 2.53 Thông tin chi tiết lớp Room ............................................................................. 52 
+Bảng 2.54 Thông tin chi tiết lớp ScoreScale ..................................................................... 52 
+Bảng 2.55 Thông tin chi tiết lớp SharedQuiz .................................................................... 53 
+Bảng 2.56 Thông tin chi tiết lớp Student........................................................................... 53 
+Bảng 2.57 Thông tin chi tiết lớp StudentAnswer .............................................................. 53 
+Bảng 2.58 Thông tin chi tiết lớp StudentQuiz ................................................................... 54 
+Bảng 2.59 Thông tin chi tiết lớp SubmitExercise ............................................................. 54 
+Bảng 2.60 Thông tin chi tiết lớp teacher ........................................................................... 54 
+Bảng 2.61 Thông tin chi tiết lớp TeacherShift .................................................................. 54 
+Bảng 2.62 Thông tin chi tiết lớp User ............................................................................... 55 
+Bảng 3.1 Kịch bản kiểm thử chức năng phân tích ngân hàng bằng AI ............................. 80 
+Bảng 3.2 Kịch bản kiểm thử chức năng thanh toán khóa học ........................................... 81 
+Bảng 3.3 Kịch bản kiểm thử chức năng quản lý lớp học và làm bài kiểm tra .................. 82 
+ 
+  
+Đồ án tốt nghiệp   
+15 
+CHƯƠNG 1: TỔNG QUAN VÀ GIỚI THIỆU ĐỀ TÀI 
+1. Lý do chọn đề tài 
+Trong bối cảnh chuyển đổi số đang diễn ra mạnh mẽ tại Việt Nam, lĩnh vực công nghệ 
+giáo dục đã có những bước phát triển vượt bậc. Nhu cầu học tập trực tuyến không chỉ dừng 
+lại ở các hệ thống quản lý học tập nội bộ tại các trường đại học, mà còn mở rộng sang mô 
+hình các trung tâm đào tạo tư nhân với nhu cầu thương mại hóa khóa học cao. 
+Tuy nhiên, qua quá trình khảo sát thực tế quy trình vận hành tại các trung tâm đào tạo 
+quy mô vừa và nhỏ, nhóm nghiên cứu nhận thấy một số bất cập lớn: 
+• Sự phân mảnh trong quản lý các đơn vị thường phải sử dụng nhiều công cụ rời rạc 
+một website đ ể quảng bá và bán khóa h ọc, một hệ thống khác đ ể dạy học, và các 
+công cụ thủ công để xếp lịch, điểm danh hay thông báo. Điều này dẫn đến khó khăn 
+trong việc đồng bộ dữ liệu quản lý hồ sơ học viên. 
+• Gánh nặng trong công tác kh ảo thí, quy trình xây dựng ngân hàng câu h ỏi hiện tại 
+chủ yếu thực hiện thủ công. Giáo viên mất rất nhiều thời gian để nhập liệu từng câu 
+hỏi từ các tài liệu word/pdf có sẵn lên hệ thống, làm giảm hiệu suất làm việc và tính 
+linh hoạt trong việc tổ chức thi cử. 
+ 
+Hình 1.1 Thực trạng và giải pháp  
+Xuất phát từ những thách thức thực tiễn đó, nhóm quyết định thực hiện đề tài: " Nền 
+tảng quản lý khóa học và vận hành trung tâm giáo dục trực tuyến LearnEZ". 
+
+Đồ án tốt nghiệp   
+16 
+Đề tài hướng tới việc xây dựng một giải pháp tất cả trong một, kết hợp chặt chẽ giữa 
+quy trình thương mại điện tử tích hợp thanh toán tr ực tuyến VNPay và quản trị đào tạo. 
+Điểm đột phá của đề tài nằm ở việc nghiên cứu và ứng dụng kỹ thuật tích hợp Generative 
+AI thông qua API, giúp tự động hóa quy trình phân tích và bóc tách đ ề thi từ văn bản thô, 
+giải quyết bài toán nhập liệu phức tạp cho giáo viên. Đây là hướng đi phù hợp với xu thế 
+ứng dụng trí tuệ nhân tạo vào thực tiễn doanh nghiệp hiện nay. 
+2. Đối tượng nghiên cứu và phạm vi nghiên cứu 
+Dựa trên yêu cầu thực tế và thời gian thực hiện, nhóm xác định phạm vi của hệ thống 
+bao gồm các phân hệ chức năng và nhóm người dùng cụ thể như sau: 
+2.1 Phạm vi chức năng 
+Hệ thống được xây dựng với 5 phân hệ cốt lõi, đảm bảo quy trình khép kín t ừ khâu 
+bán hàng đến đào tạo: 
+• Quản trị và phân quyền: 
+o Quản lý định danh, đăng ký/đăng nhập và bảo mật phiên làm việc. 
+o Phân quyền truy cập tài nguyên chi tiết theo vai trò người dùng. 
+• Khóa học online: 
+o Quản lý catalogue khóa học, video bài giảng và tài liệu học tập. 
+o Quản lý giỏ hàng, đơn hàng và lịch sử giao dịch. 
+o Tích hợp cổng thanh toán VNPay, cho phép xử lý giao dịch tự động. 
+• Quản lý lớp học offline: 
+o Quản lý vòng đời lớp học, xếp thời khóa biểu. 
+o Điểm danh điện tử và thống kê chuyên cần. 
+o Tổ chức thi trắc nghiệm trực tuyến và chấm điểm tự động. 
+• Ngân hàng đề: 
+o Quản lý ngân hàng câu hỏi theo chủ đề và mức độ khó. 
+o Ứng dụng AI để phân tích và bóc tách tự động đề thi từ file văn bản, hỗ trợ giáo 
+viên xây dựng ngân hàng đề nhanh chóng. 
+Đồ án tốt nghiệp   
+17 
+• Tin tức: 
+o Quản lý các bài viết của trung tâm 
+o Gửi thông báo về người dùng 
+2.2 Phạm vi người dùng 
+Hệ thống được thiết kế để phục vụ 04 nhóm tác nhân chính: 
+• Quản trị viên: Quản lý toàn bộ cấu hình hệ thống, người dùng, phê duyệt khóa học 
+và xem báo cáo tổng quan. 
+• Tư vấn viên: Phụ trách quản lý truyền thông, quản lý thông tin các khóa h ọc và hỗ 
+trợ học viên. 
+• Giáo viên: Ch ịu trách nhi ệm chuyên môn:  quản lý l ớp học, điểm danh, ra đ ề thi, 
+chấm bài tập và theo dõi tiến độ học viên. 
+• Học viên: Th ực hiện mua khóa h ọc, thanh toán tr ực tuyến, tham gia l ớp học, làm 
+bài kiểm tra và theo dõi kết quả học tập. 
+ 
+Hình 1.2 Phạm vi người dùng hệ thống 
+3. Kết quả dự kiến 
+Sau khi hoàn thành quá trình nghiên cứu và triển khai, đề tài dự kiến đạt được các kết 
+quả cụ thể về mặt sản phẩm phần mềm và hồ sơ kỹ thuật như sau: 
+
+Đồ án tốt nghiệp   
+18 
+3.1. Về sản phẩm phần mềm  
+Xây dựng và hoàn thiện hệ thống web app quản lý đào tạo và kinh doanh khóa học với 
+các phân hệ hoạt động ổn định, đáp ứng các yêu cầu nghiệp vụ đã đề ra: 
+• Phân hệ quản trị và bảo mật: 
+o Hệ thống vận hành trơn tru quy trình đ ịnh danh và phân quyền cho 4 nhóm đối 
+tượng: admin, giáo viên, tư vấn viên và học viên. 
+o Cung cấp đầy đủ các chức năng quản trị vòng đời tài khoản: Cấp mới, khóa, mở 
+khóa và khôi phục mật khẩu an toàn qua Email/OTP. 
+• Phân hệ khóa học online: 
+o Xây dựng thành công quy trình mua hàng khép kín: T ừ quản lý gi ỏ hàng, tạo 
+đơn hàng đến quản lý lịch sử giao dịch,. 
+o Kết quả nổi bật: Tích hợp thành công cổng thanh toán trực tuyến VNPay, xử lý 
+tự động trạng thái đơn hàng ngay sau khi thanh toán, gi ảm thiểu thao tác xác 
+nhận thủ công. 
+• Phân hệ quản lý lớp học offline: 
+o Số hóa toàn diện quy trình lớp học: Cho phép giáo viên x ếp thời khóa biểu chi 
+tiết, thực hiện điểm danh đi ện tử và quản lý bài t ập về nhà trên cùng m ột nền 
+tảng. 
+o Hệ thống báo cáo thống kê chuyên cần và tiến độ nộp bài của học viên được cập 
+nhật theo thời gian thực. 
+• Phân hệ ngân hàng đề: 
+o Xây dựng thành công ngân hàng câu hỏi được phân loại theo chủ đề và mức độ 
+khó. 
+o Điểm nhấn công nghệ: Ứng dụng thành công kỹ thuật tích hợp API Generative 
+AI để tự động hóa vi ệc phân tích và bóc tách đ ề thi từ file văn b ản, giúp giáo 
+viên tạo đề nhanh chóng. 
+o Hệ thống tổ chức thi trắc nghiệm trực tuyến với khả năng tự động chấm điểm và 
+thống kê phổ điểm chi tiết cho từng lớp học. 
+Đồ án tốt nghiệp   
+19 
+3.2. Về tài liệu và hồ sơ kỹ thuật  
+Bên cạnh sản phẩm ứng dụng, đồ án cam kết cung cấp bộ tài liệu kỹ thuật chuẩn mực: 
+• Báo cáo tổng kết: Trình bày chi tiết cơ sở lý thuyết, phân tích thiết kế hệ thống và 
+kết quả kiểm thử. 
+• Mã nguồn: Được tổ chức theo kiến trúc phân tầng rõ ràng, tuân thủ các quy tắc clean 
+code, thuận tiện cho việc bảo trì và mở rộng. 
+• Tài liệu API: Mô t ả chi tiết các endpoint, định dạng request/response phục vụ cho 
+việc tích hợp và phát triển mobile app sau này 
+4. Công nghệ sử dụng  
+4.1 Khái quát mô hình client-server 
+4.1.1 Định nghĩa và nguyên lý hoạt động   
+Mô hình client-server là kiến trúc mạng máy tính trong đó các tác vụ được phân chia 
+giữa hai nhóm đối tượng chính: bên cung cấp dịch vụ  và bên yêu cầu dịch vụ. 
+Nguyên lý hoạt động cốt lõi dựa trên cơ chế request – response: 
+• Client: Là nơi tiếp nhận tương tác từ người dùng cuối, đóng gói thông tin và gửi yêu 
+cầu đến server thông qua mạng Internet. 
+• Server: Là nơi chứa năng lực xử lý nghiệp vụ và lưu trữ dữ liệu tập trung. Khi nhận 
+request, server thực hiện xác thực, truy vấn dữ liệu, xử lý nghiệp vụ và trả về kết 
+quả cho client. 
+4.1.2 Áp dụng mô hình trong hệ thống 
+Dựa trên yêu cầu về tính bảo mật và khả năng mở rộng của đề tài, nhóm nghiên cứu 
+áp dụng mô hình client-server kết hợp với kiến trúc tích hợp dịch vụ bên thứ ba. Cụ thể: 
+• Phía client được xây dựng bằng thư viện Re actJS. Client đảm nhận vai trò hiển thị 
+giao diện người dùng và trải nghiệm người dùng cho các đối tượng như quản trị 
+Đồ án tốt nghiệp   
+20 
+viên, giáo viên và học viên. Client không lưu trữ dữ liệu nghiệp vụ và không kết nối 
+trực tiếp vào cơ sở dữ liệu. 
+• Phía Server được phát tr iển trên nền tảng Java Spring Boot. Server cung cấp các 
+RESTful API để client giao tiếp. Mọi dữ liệu trao đổi đều tuân thủ định dạng JSON. 
+• Các dịch vụ tích hợp: Server đóng vai trò trung gian để kết nối với các hệ thống bên 
+ngoài: 
+o Kết nối với Generative AI API để thực hiện phân tích đề thi từ file văn bản. 
+o Kết nối với cổng thanh toán VNPay để xử lý giao dịch tài chính. 
+Sự phân tách này giúp hệ thống đạt được tính phân tách: Logic hiển thị và logic 
+nghiệp vụ hoàn toàn độc lập, giúp dễ dàng bảo trì và nâng cấp từng thành phần riêng biệt. 
+ 
+Hình 1.3 Mô hình tổng quát 
+Luồng dữ liệu trong hệ thống được kiểm soát chặt chẽ. Client chỉ tương tác với 
+database thông qua lớp API của Spring Boot, đảm bảo tính bảo mật dữ liệu. Đồng thời, 
+Spring Boot đóng vai trò là server duy nhất để giao tiếp với các dịch vụ AI và thanh toán, 
+giúp che giấu các thông tin nhạy cảm khỏi phía người dùng. 
+4.2 Java Spring boot 
+4.2.1 Giới thiệu tổng quan 
+Spring Boot là một dự án nổi bật trong hệ sinh thái Spring Framework, được thiết kế 
+để đơn giản hóa quá trình phát triển các ứng dụng Java cấp doanh nghiệp. Thay vì yêu cầu 
+
+Đồ án tốt nghiệp   
+21 
+các cấu hình XML phức tạp như Spring MVC truyền thống, Spring Boot áp dụng triệt để 
+nguyên lý quy ước hơn cấu hình , giúp giảm thiểu thời gian thiết lập môi trường và cho 
+phép đội ngũ phát triển tập trung tối đa vào logic nghiệp vụ. 
+Trong khuôn khổ đồ án này, Spring Boot đóng vai trò là lõi xử lý phía server, chịu 
+trách nhiệm cung cấp toàn bộ hệ thống RESTful API để giao tiếp với client và tích hợp với 
+các dịch vụ bên ngoài 
+4.2.2 Kiến trúc phân tầng  
+Để đảm bảo tính bảo trì, khả năng mở rộng và mã nguồn sạch, hệ thống backend được 
+tổ chức nghiêm ngặt theo mô hình kiến trúc 3 tầng: 
+• Tầng controller: 
+o Đây là lớp ngoài cùng, có nhiệm vụ tiếp nhận các yêu cầu HTTP từ client. 
+o Controller thực hiện xác thực định dạng dữ liệu đầu vào trước khi chuyển 
+tiếp xuống tầng dưới. 
+o Áp dụng trong đồ án: Các lớp xử lý đăng nhập/đăng ký, xử lý thao tác giỏ 
+hàng, tiếp nhận yêu cầu nộp bài thi. 
+• Tầng service: 
+ Đây là nơi chứa toàn bộ logic nghiệp vụ cốt lõi của hệ thống. Tầng này chịu 
+trách nhiệm xử lý các tính toán phức tạp, kiểm tra ràng buộc dữ liệu và điều 
+phối các lời gọi đến API bên thứ ba. 
+ Áp dụng trong đồ án: Logic tính tổng tiền đơn hàng, logic so khớp đáp án để 
+chấm điểm tự động bài trắc nghiệm, hoặc logic gọi API Generative AI để 
+phân tích file đề thi đều được xử lý tại đây. 
+• Tầng repository 
+o Tầng này tương tác trực tiếp với cơ sở dữ liệu MySQL. Hệ thống sử dụng 
+Spring Data JPA để ánh xạ các bảng dữ liệu thành các đối tượng thực thể, 
+giúp loại bỏ sự phụ thuộc vào các câu lệnh SQL thủ công và ngăn chặn  rủi 
+ro SQL Injection. 
+Đồ án tốt nghiệp   
+22 
+4.3 ReactJS 
+4.3.1 Tổng quan và lý do lựa chọn công nghệ   
+ReactJS là một thư viện JavaScript mã nguồn mở được phát triển bởi Facebook , 
+chuyên dụng để xây dựng giao diện người dùng . Khác với các công nghệ render truyền 
+thống phía server buộc phải tải lại toàn bộ trang web mỗi khi có thay đổi dữ liệu, ReactJS 
+hoạt động theo cơ chế SPA. 
+Trong bối cảnh cụ thể của đề tài, nhóm nghiên cứu quyết định lựa chọn ReactJS vì các 
+ưu điểm kỹ thuật giải quyết trực tiếp các bài toán nghiệp vụ sau: 
+• Tối ưu hóa module khảo thí: Đối với tính năng làm bài thi trắc nghiệm trực tuyến , 
+yêu cầu tiên quyết là sự ổn định của đồng hồ đếm ngược và trạng thái làm bài. Cơ 
+chế SPA của ReactJS đảm bảo khi học viên chuyển câu hỏi, trang web không bị tải 
+lại, giúp trải nghiệm thi cử diễn ra liền mạch và kết quả được lưu trữ liên tục. 
+• Tăng tốc độ phản hồi cho module thương mại điện tử: Việc thêm/xóa sản phẩm vào 
+giỏ hàng và chuyển hướng thanh toán VNPay cần tốc độ xử lý nhanh. ReactJS giúp 
+cập nhật giao diện giỏ hàng tức thì mà không gây độ trễ, tăng tỷ lệ chuyển đổi đơn 
+hàng. 
+4.3.2 Kiến trúc component   
+Hệ thống frontend được thiết kế dựa trên tư duy chia nhỏ giao diện thành các thành 
+phần độc lập có khả năng tái sử dụn g cao. Điều này giúp đồng bộ giao diện trên toàn hệ 
+thống và giảm thiểu công sức bảo trì. 
+Cấu trúc phân rã component của hệ thống được tổ chức như sau: 
+Đồ án tốt nghiệp   
+23 
+ 
+Hình 1.4 Cấu trúc phân rã component 
+• Core components: Bao gồm các thành phần cơ bản dùng chung. 
+• Layout components: Định nghĩa khung sườn giao diện cho từng vai trò. 
+• Feature components: Các thành phần nghiệp vụ phức tạp có trong hệ thống 
+4.4 Hệ quản trị cơ sở dữ liệu MySQL 
+4.4.1 Tổng quan   
+MySQL là hệ quản trị cơ sở dữ liệu quan hệ mã nguồn mở phổ biến nhất hiện nay. Nó 
+tổ chức dữ liệu thành các bảng có quan hệ chặt chẽ với nhau và sử dụng ngôn ngữ truy vấn 
+có cấu trúc để thao tác dữ liệu. 
+4.4.2 Lý do lựa chọn và ứng dụng trong đề tài   
+Dựa trên đặc thù của hệ thống, nhóm nghiên cứu quyết định sử dụng MySQL làm kho 
+lưu trữ chính vì các lý do kỹ thuật sau: 
+• Quản lý các mối quan hệ phức tạp: Hệ thống có cấu trúc dữ liệu ràng buộc chặt chẽ 
+giữa các thực thể, đòi hỏi tính toàn vẹn tham chiếu cao mà các cơ sở dự liệu NoSQL 
+khó đáp ứng tốt. 
+
+Đồ án tốt nghiệp   
+24 
+• MySQL giúp đảm bảo rằng khi xóa một bản ghi, hệ thống sẽ ngăn chặn hoặc cảnh 
+báo nếu bản ghi đó đang được liên kết với một bản ghi khác, tránh lỗi dữ liệu mồ 
+côi. 
+• Tuân thủ chuẩn ACID cho các giao dịch : Đây là yếu tố tiên quyết đối với hai phân 
+hệ nhạy cảm nhất của hệ thống: 
+o Phân hệ thanh toán: Khi người dùng thanh toán qua VNPay, quy trình ghi nhận 
+đơn hàng và kích hoạt khóa học phải diễn ra đồng thời. Nếu quá trình thanh toán 
+bị lỗi mạng giữa chừng, MySQL cho phép hoàn tác toàn bộ giao dịch để đảm 
+bảo không xảy ra tình trạng trừ tiền nhưng chưa nhận khóa học. 
+o Phân hệ khảo thí: Khi học viên nộp bài thi , toàn bộ các câu trả lời chi tiết và 
+điểm số tổng k ết phải được lưu trữ nhất quán . Sự sai lệch dữ liệu ở đây có thể 
+dẫn đến khiếu nại về điểm số. 
+• Hiệu năng và khả năng đánh chỉ mục : Hệ thống sử dụng cơ chế indexing của 
+MySQL để tối ưu hóa tốc độ cho các API tìm kiếm và lọc dữ liệu tần suất cao. 
+4.5 Tích hợp dịch vụ bên thứ ba 
+Để mở rộng khả năng xử lý của hệ thống mà không cần xây dựng lại các module phức 
+tạp từ đầu, nhóm nghiên cứu đã áp dụng kỹ thuật tích hợp hệ thống với hai dịch vụ quan 
+trọng: Cổng thanh toán VNPay và Generative AI. 
+4.5.1 Cổng thanh toán trực tuyến VNPay 
+VNPay là một trong những giải pháp thanh toán điện tử phổ biến nhất tại Việt Nam, 
+cho phép người dùng thanh toán qua mã QR, thẻ ATM nội địa và thẻ quốc tế. Trong đồ án 
+này, hệ thống tích hợp môi trường thử nghiệm để mô phỏng quy trình thanh toán khóa học 
+thực tế. 
+4.5.2 Tích hợp Generative AI 
+Trong phân hệ khảo thí, việc nhập liệu thủ công hàng trăm câu hỏi trắc nghiệm từ các 
+file đề thi vào hệ thống tốn rất nhiều thời gian của giáo viên. 
+Đồ án tốt nghiệp   
+25 
+• Processing: Server đọc nội dung file, kết hợp với kỹ thuật prompt engineering để 
+yêu cầu AI phân tích cấu trúc, tách câu hỏi, đáp án đúng và các phương án nhiễu. 
+• Output: AI trả về dữ liệu dưới dạng JSON có cấu trúc chuẩn. Server thực hiện kiểm 
+tra dữ liệu này trước khi lưu vào ngân hàng câu hỏi. 
+Giải pháp này giúp giảm thời gian tạo đề thi từ hàng giờ xuống chỉ còn vài phút. 
+5. Kết luận 
+Trong chương này chúng tôi đã trình bày tổng quát về đề tài nền tảng quản lý khóa học 
+và vận hành trung tâm giáo dục trực tuyến Learn-EZ. Với bối cảnh của Việt Nam hiện nay 
+và mong muốn kết hợp công nghệ và giáo dục chúng tôi đã đưa ra giải pháp để có thể giải 
+quyết bài toán này. Bằng sự kết hợp của các ngôn ngữ lập trình và cơ sở dữ liệu, chúng tôi 
+đã bắt đầu triển khai dự án này để có thể phục vụ cho người dùng. Phần phân tích và triển 
+khai hệ thống chúng tôi sẽ trình bày ở các chương sau. 
+  
+  
+Đồ án tốt nghiệp   
+26 
+CHƯƠNG 2: PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG 
+1. Tổng quan về nghiệp vụ 
+Hệ thống sẽ có 4 tác nhân chính tác động vào hệ thống đó là người dùng và nhân viên 
+của trung tâm , VNPay, AI . Mỗi tác nhân đ ảm nhận các ch ức năng riêng bi ệt nhằm giúp 
+người sử dụng có thể hoàn thành các nhiệm vụ đúng đắn. 
+Tác nhân thứ 1 - người dùng: Là người truy cập hệ thống bằng tài khoản được cấp hoặc 
+có thể tự đăng ký. Người dùng có th ể thực hiện các 1 ph ần các chức năng liên quan đ ến 
+khóa học, giỏ hàng và các lớp học offline. 
+Tác nhân thứ 2 - nhân viên trung tâm: Là ngư ời truy cập và quản trị hệ thống bằng tài 
+khoản được cấp. Người dùng có thể thực hiện chức năng quản lý các đối tượng có trong hệ 
+thống. 
+Tác nhân thứ 3 - VNPay: Là bên đối tác thứ 3 cung cấp các thủ tục thanh toán khi người 
+dùng có nhu cầu mua khóa học 
+Tác nhân thứ 4 - AI: Là bên thứ 3 giúp phân tích câu hỏi và đưa ra câu tr ả lời và giải 
+thích khi được yêu cầu. 
+2. Phân tích yêu cầu chức năng 
+2.1 Tổng quan hệ thống 
+ 
+Đồ án tốt nghiệp   
+27 
+ 
+Hình 2.1 Tổng quan hệ thống 
+
+Đồ án tốt nghiệp   
+28 
+2.2 Đặc tả Usecase 
+Hệ thống được phân thành 5 module chính với các usecase như sau 
+Module Usecase liên quan 
+Quản trị và 
+phân quyền 
+• Quản lý định danh: 
+    ◦ Đăng ký tài khoản mới và xác thực email. 
+    ◦ Đăng nhập hệ thống sử dụng cơ chế JWT để xác thực. 
+    ◦ Quên mật khẩu: Gửi yêu cầu, nhận OTP qua email, xác thực OTP 
+và đặt lại mật khẩu mới. 
+    ◦ Cập nhật thông tin cá nhân và đổi mật khẩu. 
+• Quản lý người dùng: 
+    ◦ Quản lý danh sách ngư ời dùng (dành cho manager/consultant): 
+Lọc, xem chi tiết, vô hiệu hóa hoặc xóa tài khoản người dùng,. 
+ 
+Khóa học 
+online 
+• Quản lý nội dung (Dành cho consultant/manager): 
+    ◦ Tạo mới và cập nhật thông tin khóa học. 
+    ◦ Quản lý bài h ọc: Thêm/sửa/xóa bài h ọc video, tài li ệu đính kèm 
+trong từng khóa. 
+• Trải nghiệm học tập (Dành cho student): 
+    ◦ Xem danh sách khóa học công khai và tìm kiếm khóa học,. 
+    ◦ Học tập: Truy cập khóa học đã mua, xem video bài giảng. 
+• Thương mại điện tử và Thanh toán: 
+    ◦ Quản lý giỏ hàng: Thêm/xóa khóa học, xem tổng tiền. 
+    ◦ Quản lý đơn hàng: T ạo đơn hàng từ giỏ hoặc mua ngay, xem lịch 
+sử đơn hàng và trạng thái. 
+    ◦ Tích hợp thanh toán: Kết nối cổng thanh toán VNPay, xử lý hoàn 
+tác tự động để kích hoạt khóa học ngay khi thanh toán thành công. 
+ 
+Quản lý lớp 
+học offline 
+• Quản lý lớp học và thành viên: 
+    ◦ Quản lý vòng đời lớp học: Tạo lớp, cập nhật trạng thái. 
+    ◦ Quản lý thành viên: Thêm/xóa học viên vào lớp. 
+• Lịch học và điểm danh: 
+    ◦ Xếp thời khóa biểu: Tạo và quản lý các buổi học, gán phòng học. 
+    ◦ Điểm danh điện tử: Giáo viên thực hiện điểm danh theo các trạng 
+thái cho từng buổi học và xem thống kê chuyên cần. 
+• Thông báo: 
+    ◦ Tạo và quản lý thông báo riêng cho từng lớp. 
+• Khảo thí trong lớp: 
+    ◦ Tổ chức thi: Giáo viên kéo bài kiểm tra từ ngân hàng đề về lớp, cài 
+đặt thời gian làm bài. 
+Đồ án tốt nghiệp   
+29 
+    ◦ Làm bài và ch ấm điểm: Học viên làm bài tr ực tuyến, hệ thống tự 
+động thu bài khi hết giờ và chấm điểm. 
+Ngân hàng đ ề 
+và AI 
+• Quản lý ngân hàng câu hỏi: 
+    ◦ Tạo và quản lý các ngân hàng đề theo chủ đề. 
+    ◦ Quản lý danh sách câu, gán câu hỏi vào ngân hàng. 
+• Tích hợp AI: 
+    ◦ Tự động bóc tách đề thi: Giáo viên upload file đề thi (PDF/Word), 
+hệ thống sử dụng Google Gemini AI để phân tích, trích xuất câu hỏi và 
+đáp án tự động. 
+    ◦ Lưu trữ kết quả phân tích từ AI vào cơ sở dữ liệu để tái sử dụng. 
+• Xây dựng bài kiểm tra: 
+    ◦ Tạo bài kiểm tra từ ngân hàng câu hỏi. 
+Tin tức và 
+Thông báo 
+• Quản lý Blog/Tin tức: 
+    ◦ Soạn thảo bài viết: Sử dụng trình soạn thảo văn bản giàu tính năng 
+để viết tin tức, mẹo học tập. 
+    ◦ Quy trình duy ệt bài: Consultant  hoặc t eacher vi ết bài, manager 
+hoặc consultant duyệt bài trước khi hiển thị công khai,. 
+    ◦ Phân loại bài viết theo danh mục. 
+• Hệ thống thông báo: 
+    ◦ Gửi thông báo đ ến người dùng về các sự kiện: Có khóa h ọc mới, 
+được thêm vào lớp học, có bài kiểm tra mới, nhắc nhở bài tập,. 
+    ◦ Quản lý trạng thái thông báo. 
+Bảng 2.1 Tổng quan usecase hệ thống 
+Dưới đây là kịch bản chi tiết cho những usecase quan trọng. 
+2.2.1 Usecase đăng nhập 
+Usecase name Đăng nhập 
+Description Usecase cho phép ngư ời dùng đăng nh ập vào h ệ thống để có thể sử 
+dụng các chức năng của mình. 
+Actor Người dùng 
+Pre-condition Người dùng đã có tài khoản 
+Post-condition Đăng nhập thành công 
+Flow 1. Người dùng chọn chức năng đăng nhập vào hệ thống.  
+2. Hệ thống hiển thị form đăng nhập.  
+3. Người dùng nhập tài khoản và mật khẩu.  
+4. Người dùng ấn nút đăng nhập.  
+5. Hệ thống kiểm tra tính h ợp lệ và đầy đủ của các trường đã đư ợc 
+nhập.  
+6. Hệ thống kiểm tra tài khoản và mật khẩu chính xác hay không.  
+7. Hệ thống chuyển đến trang chủ. 
+Đồ án tốt nghiệp   
+30 
+Exception 5a. Hệ thống thông báo l ỗi: “Tài kho ản đăng nh ập không đúng đ ịnh 
+dạng email!” nếu nhập không đúng định dạng email.  
+6a. Hệ thống thông báo l ỗi: “Tài kho ản/mật kh ẩu không đúng” n ếu 
+thông tin được nhập không chính xác. 
+Bảng 2.2 Usecase đăng nhập 
+2.2.2 Usecase quên mật khẩu 
+Usecase name Quên mật khẩu 
+Description Usecase cho phép ngư ời dùng t ạo lại mật khẩu mới khi người dùng 
+quên mật khẩu 
+Actor Người dùng hệ thống 
+Pre-condition Người dùng có tài khoản trong hệ thống và đã quên mất mật khẩu 
+Post-condition Cập nhật lại mật khẩu thành công 
+Flow 1. Tại màn hình đăng nhập người dùng chọn chức năng quên mật 
+khẩu 
+2. Hệ thống hiện thì giao diện form yêu cầu nhập email 
+3. Người cung cấp email 
+4. Hệ thống kiểm tra email có tồn tại trong hệ thống 
+5. Hệ thống gửi mã otp cho người dùng thông qua email 
+6. Hệ thống hiện thị form nhập thông tin otp 
+7. Người dùng cung cấp otp  
+8. Hệ thống xác thực otp và hiện thị giao diện nhập mật khẩu mới 
+cho người dùng 
+9. Người dùng nhập mật khẩu mới  
+10. Hệ thống kiểm tra và lưu mật khẩu mới cho người dùng 
+11. Hệ thống thông báo thành công 
+Exception 3a. Hệ thống thông báo lỗi: “Email không đúng định dạng.” 
+4a. Hệ thống thông báo lỗi: “Email không tồn tại trong hệ thống. Vui 
+lòng kiểm tra lại thông tin.” 
+8a. Hệ thống thông báo lỗi: “Mã OTP không chính xác hoặc đã bị quá 
+hạn. Vui lòng kiểm tra lại thông tin.” 
+Bảng 2.3 Usecase quên mật khẩu 
+2.2.3 Usecase thêm khóa học vào giỏ hàng 
+Usecase name Thêm khóa học vào giỏ hàng 
+Description Usecase cho phép người dùng thêm khóa học vào giỏ hàng của họ 
+Actor Người dùng hệ thống 
+Pre-condition Người dùng có tài kho ản hệ thống và mu ốn thêm khóa h ọc vào gi ỏ 
+hành của họ 
+Post-condition Thêm khóa học vào giỏ hành thành công 
+Đồ án tốt nghiệp   
+31 
+Flow 1. Tại màn hình khóa học người dùng chọn thêm khóa học vào giỏ 
+hàng 
+2. Hệ thống kiểm tra sự tồn tại của khóa học trong giỏ hàng 
+3. Hệ thống thêm khóa học vào giỏ hàng 
+4. Hệ thống thông báo thành công 
+Exception 2a. Hệ thống thông báo lỗi: “Khóa học đã có trong giỏ hàng.” 
+Bảng 2.4 Usecase thên khóa học vào giỏ hàng 
+2.2.4 Usecase mua khóa học 
+Usecase name Mua khóa học trực tiếp tại khóa học hoặc tại giỏ hàng 
+Description Usecase cho phép người dùng mua khóa học khi họ có nhu cầu mua và 
+xem các bài giảng trong khóa học 
+Actor Người dùng hệ thống 
+Pre-condition Người dùng có tài khoản của hệ thống và có nhu cầu mua khóa học 
+Post-condition Mua khóa học thành công 
+Flow 1. Tại màn hình người dùng chọn chức năng mua khóa học 
+2. Hệ thống tạo đơn hàng 
+3. Hệ thống hiện thị giao diện nhập thông tin thanh toán 
+4. Người dùng cung cấp thông tin thanh toán 
+5. Hệ thống kiểm tra thông tin thanh toán 
+6. Hệ thống gửi yêu cầu đến dịch vụ thanh toán của VNPay 
+7. VNPay gửi mã giao dịch cho người dùng 
+8. Hệ thống hiên thị form nhập mã giao dịch 
+9. Người dùng nhập thông tin mã giao dịch 
+10. Hệ thống gửi thông tin thanh toán cho hệ thống của VNPay 
+11. VNPay gửi thông tin giao dịch thành công cho hệ thống  
+12. Hệ thống hiện thị thông tin thanh toán thành công 
+Exception 5a. Hệ thống thông báo l ỗi: “Thông tin thanh toán không chính xác. 
+Vui lòng kiểm tra lại.” 
+6a. Hệ thống thông báo lỗi: “Hệ thống thanh toán không phản hồi.” 
+10a. Hệ thống thông báo lỗi: “Mã giao dịch không hợp lệ” 
+Bảng 2.5 Usecase mua khóa học 
+2.2.5 Usecase tạo lớp học mới 
+Usecase name Tạo lớp học mới 
+Description Usecase cho phép người dùng tạo một lớp học tại trung tâm 
+Actor Tư vấn viên hoặc quản trị viên 
+Pre-condition Người dùng đăng nhập bằng tài khoản tư vấn viên hoặc quản trị viên 
+Post-condition Tạo lớp học thành công 
+Flow 1. Tại màn quản lý lớp học, chọn Thêm lớp học 
+Đồ án tốt nghiệp   
+32 
+2. Hệ thống hiển thị cửa sổ thêm lớp học gồm các trường: Tên lớp học, 
+Tiêu đề, Mô tả, Giáo viên 
+3. Người dùng nhập các thông tin yêu cầu 
+4. Người dùng ấn Lưu 
+5. Hệ thông hiển thị thông báo lưu thành công 
+Exception 3a. Người dùng nhập không đủ các thông tin yêu cầu 
+4a. Người dùng nhấn hủy 
+5. Hệ thống báo lỗi “Tạo lớp học không thành công” 
+Bảng 2.6 Usecase tạo lớp học mới 
+2.2.6 Usecase thêm học sinh vào lớp học 
+Usecase name Thêm học sinh vào lớp học 
+Description Usecase cho phép người dùng thêm học sinh vào lớp học 
+Actor Giáo viên, Tư vấn viên, Quản trị viên 
+Pre-condition Người dùng đăng nhập với tài khoản Giáo viên, tư vấn viên hoặc quản 
+trị viên 
+Post-condition Người dùng thêm thành công học sinh vào lớp học 
+Flow 1. Tại màn hình quản lý lớp học, người dùng chọn 1 lớp học muốn 
+thêm học sinh 
+2. Hệ thống điều hướng hiển thị đến màn chi tiết của lớp học, gồm 
+các tab: thông tin chung, danh sách h ọc viên, l ịch học, thông 
+báo, điểm danh, bài kiểm tra 
+3. Người dùng chọn tab danh sách học viên 
+4. Hệ thống hiển thị màn danh sách học viên  
+5. Người dùng chọn nút thêm học viên 
+6. Hệ thống mở ra danh sách học viên của trung tâm 
+7. Người dùng tích chọn những học viên muốn thêm vào lớp 
+8. Người dùng ấn thêm 
+9. Hệ thống hiển thị thông báo thành công 
+Exception 4a. Hệ thống hiện thị danh sách học viên trống 
+6a. Hệ thống hiện thị danh sách học viên trống 
+9a. Hệ thống thông báo gặp lỗi khi thêm học viên 
+Bảng 2.7 Usecase thêm học sinh vào lớp học 
+2.2.7 Usecase tạo thông báo trong lớp học 
+Usecase name Tạo thông báo trong lớp học 
+Description Usecase cho phép người dùng tạo thông báo trong lớp học 
+Actor Giáo viên, nhân viên, quản trị viên 
+ 
+Pre-condition Người dùng đăng nh ập thành công v ới vai trò giáo viên, nhân viên, 
+quản trị viên 
+Đồ án tốt nghiệp   
+33 
+Post-condition Người dùng tạo thông báo thành công 
+Flow 1. Tại màn hình quản lý lớp học, người dùng chọn 1 lớp học muốn 
+tạo thông báo 
+2. Hệ thống điều hướng hiển thị đến màn chi tiết của lớp học, gồm 
+các tab: thông tin chung, danh sách h ọc viên, l ịch học, thông 
+báo, điểm danh, bài kiểm tra 
+3. Người dùng chọn tab Thông báo 
+4. Hệ thống hiển thị màn thông báo 
+5. Người dùng ấn Tạo thông báo 
+6. Hệ thống hiển thị cửa sổ tạo thông báo  
+7. Người dùng nhập các thông tin bắt buộc và thông tin muốn thêm 
+8. Người dùng ấn Tạo mới 
+9. Hệ thống thông báo “Đã tạo thông báo.” 
+Exception 9a. Hệ thống thông báo Có lỗi khi tạo thông báo 
+Bảng 2.8 Usecase tạo thông báo trong lớp học 
+2.2.8 Usecase nộp link bài tập trong thông báo lớp học 
+Usecase name Nộp link bài tập trong thông báo của lớp học 
+Description Usecase cho phép người dùng nộp các bài tập được giao bằng cách gắn 
+link thông qua thông báo 
+Actor Người dùng hệ thống trong lớp học có chức vụ là học sinh 
+Pre-condition Người dùng có tài khoản hệ thống có chức vụ là học sinh và có yêu cầu 
+nộp bài tập qua thông báo 
+Post-condition Hệ thống thông báo nộp bài thành công 
+Flow 1. Tại màn hình lớp học của tôi, người dùng chọn tab thông báo 
+2. Hệ thông hiện thị ra danh sách thông báo trong lớp học 
+3. Người dùng chọn đến thông báo có yêu cầu nộp bài 
+4. Hệ thống hiện thị chi tiết thông báo  
+5. Người dùng chọn nút nộp bài tập  
+6. Hệ thống hiện thị ra ô input để người dùng nạp đường link 
+7. Người dùng điền link và ấn nộp bài 
+8. Hệ thống hiện thị thông báo thành công 
+Exception 2a. Hệ thống hiện thị ra danh sách thông báo trống 
+2b. Hệ thống hiện thị ra danh sách thông báo chỉ có tag là thông báo 
+8a. Hệ thống hiện thị thông báo lỗi: “Ngoài thời gian nộp bài.” 
+Bảng 2.9 Usecase nộp link bài bật trong thông báo lớp học 
+2.2.9 Usecase xem danh sách học sinh đã nộp bài trong thông báo  
+Usecase name Xem danh sách học sinh đã nộp bài 
+Description Usecase cho phép người dùng xem được danh sách học sinh đã nộp bài 
+trong thông báo 
+Đồ án tốt nghiệp   
+34 
+Actor Người dùng có chức vụ là giáo viên, tư vấn viên, quản trị viên 
+Pre-condition Người dùng có tài khoản có chức vụ là giáo viên, tư vấn viên, quản trị 
+viên và có thể xem thông tin của lớp học 
+Post-condition Hệ thống hiện thị danh sách học sinh đã nộp 
+Flow 1. Tại màn hình lớp học, người dùng chọn tag thông báo. 
+2. Hệ thống hiện thị ra trang danh sách thông báo 
+3. Người dùng chọn đến thông báo có tag là bài tập 
+4. Hệ thống hiện thị thông tin chi tiết thông báo 
+5. Người dùng chọn nút xem danh sách đã nộp 
+6. Hệ thống hiện thị danh sách học sinh đã nộp bài 
+Exception 2a. Hệ thống hiện thị thông báo lỗi: “Người dùng không có quyền xem 
+thông tin này.” 
+6a. Hệ thống hiện thị ra danh sách trống 
+Bảng 2.10 Usecase xem danh sách học sinh đã nộp bài trong thông báo 
+2.2.10 Usecase tạo mới ngân hàng đề 
+Usecase name Tạo mới ngân hàng đề 
+Description Usecase này cho phép người dùng tạo mới một đề trong ngân hàng đề 
+Actor Giáo viên, nhân viên, tư vấn viên, quản trị viên 
+Pre-condition Người dùng đăng nh ập với tài kho ản giáo viên, tư v ấn viên, qu ản trị 
+viên 
+Post-condition Người dùng tạo mới ngân hàng đề thành công 
+Flow 1. Tại màn ngân hàng đề, người dùng ấn Thêm mới 
+2. Hệ thống hiển thị cửa sổ tạo ngân hàng đề 
+3. Người dùng nhập các thông tin cần thiết cho đề 
+4. Người dùng ấn Tạo mới 
+5. Hệ thống hiển thị thông báo thêm thành công  
+Exception 3a. Người dùng nhập không đủ thông tin bắt buộc 
+5a. Hệ thống thông báo lỗi tạo không thành công 
+Bảng 2.11 Usecase tạo mới ngân hàng đề 
+2.2.11 Usecase thêm câu hỏi vào ngân hàng đề 
+Usecase name Thêm câu hỏi vào ngân hàng đề 
+Description Usecase này cho phép người dùng thêm câu hỏi vào đề trong ngân hàng 
+đề 
+Actor Giáo viên, nhân viên, quản trị viên 
+Pre-condition Người dùng đăng nhập với tài kho ản giáo viên, tư v ấn viên, qu ản trị 
+viên 
+Post-condition Người dùng thêm thành công câu hỏi vào đề 
+Flow 1. Tại màn Ngân hàng đề, chọn tab câu hỏi 
+2. Người dùng chọn Thêm câu hỏi 
+Đồ án tốt nghiệp   
+35 
+3. Hệ thống hiển thị cửa sổ thêm câu hỏi 
+4. Người dùng nhập các thông tin cần cho câu hỏi 
+5. Người dùng ấn tạo mới 
+6. Hệ thống thông báo “Thêm câu h ỏi vào ngân hàng đ ề thành 
+công!” 
+Exception 6a. Hệ thống người dùng nhập đủ thông tin bắt buộc 
+Bảng 2.12 Usecase thêm câu hỏi vào ngân hàng đề 
+2.2.12 Usecase thêm ngân hàng đề bằng cách đọc file kết hợp cùng AI 
+Usecase name Thêm ngân hàng đề bằng cách đọc file kết hợp cùng AI 
+Description Usecase này cho phép ngư ời dùng tạo đề trong ngân hàng b ằng cách 
+tải file để lên kết hợp AI 
+Actor Giáo viên, nhân viên, quản trị viên 
+Pre-condition Người dùng đăng nh ập với tài kho ản giáo viên, tư v ấn viên, qu ản trị 
+viên 
+Post-condition Tạo mới ngân hàng đề thành công  
+Flow 1. Tại màn ngân hàng đ ề, tab ngân hàng đề, người dùng ấn chọn 
+tạo từ AI 
+2. Hệ thống mở ra cửa sổ tạo ngân hàng đề từ AI 
+3. Người dùng nhập tiêu đề, và chọn file  
+4. Người dùng chọn phân tích file 
+5. Hệ thống phân tích và trả ra đề 
+6. Người dùng chọn Tạo ngân hàng đề 
+7. Hệ thống thông báo Tạo ngân hàng đề thành công! 
+Exception 7a. Hệ thống thông báo có lỗi khi tạo ngân hàng đề 
+Bảng 2.13 Usecase thêm ngân hàng đề bằng cách đọc file kết hợp cùng AI 
+2.2.13 Usecase chuyển ngân hàng đề thành bài kiểm tra  
+Usecase name Chuyển ngân hàng đề thành bài kiểm tra 
+Description Use case này cho phép ngư ời dùng chuyển đề trong ngân hàng thành 
+bài kiểm tra 
+Actor Giáo viên, nhân viên, quản trị viên 
+Pre-condition Người dùng đăng nh ập với tài kho ản giáo viên, tư v ấn viên, qu ản trị 
+viên 
+Post-condition Tạo mới bài kiểm tra thành công  
+Flow 1. Tại màn ngân hàng đ ề, người dùng chọn vào nút chuy ển đổi ở 
+cột hành động 
+2. Hệ thống mở cửa sổ xác nhận “Chuyển sang bài kiểm tra” 
+3. Người dùng chọn chuyển đổi 
+4. Hệ thống thông báo “Chuy ển đ ổi thành bài ki ểm tra thành 
+công!” 
+Đồ án tốt nghiệp   
+36 
+Exception 1a. Không có đề trong ngân hàng 
+Bảng 2.14 Usecase chuyển ngân hàng đề thành bài kiểm tra 
+2.2.14 Usecase tạo mới bài kiểm tra 
+Usecase name Tạo mới bài kiểm tra 
+Description Usecase này cho phép người dùng tạo mới một bài kiểm tra 
+Actor Giáo viên, nhân viên, quản trị viên 
+Pre-condition Người dùng đăng nh ập với tài khoản giáo viên, tư v ấn viên, qu ản trị 
+viên 
+Post-condition Tạo mới bài kiểm tra thành công  
+Flow 1. Tại màn ngân hàng đề, người dùng chọn tab bài kiểm tra 
+2. Hệ thống hiển thị tab bài kiểm tra 
+3. Người dùng chọn thêm bài kiểm tra 
+4. Hệ thống hiển thị giao diện thêm bài kiểm tra mới 
+5. Người dùng nhập các thông tin bài kiểm tra 
+6. Người dùng ấn tạo mới 
+7. Hệ thống thông báo tạo bài kiểm tra thành công! 
+Exception 7a. Hệ thống yêu cầu người dùng nhập đủ các trường 
+Bảng 2.15 Usecase tạo mới bài kiểm tra 
+2.2.15 Usecase thêm câu hỏi vào bài kiểm tra  
+Usecase name Thêm câu hỏi vào bài kiểm tra 
+Description Usecase này cho phép người dùng thêm câu hỏi vào bài kiểm tra 
+Actor Giáo viên, nhân viên, quản trị viên 
+Pre-condition Người dùng đăng nh ập với tài kho ản giáo viên, tư v ấn viên, qu ản trị 
+viên 
+Post-condition Thêm câu hỏi vào bài kiểm tra thành công  
+Flow 1. Tại màn Ngân hàng đề, người dùng chọn tab Bài kiểm tra 
+2. Hệ thống hiển thị tab Bài kiểm tra 
+3. Người dùng chọn biểu tượng chỉnh sửa 
+4. Hệ thống hiển thị ra giao diện chỉnh sửa 
+5. Người dùng chọn Thêm câu hỏi 
+6. Hệ thống hiển thị danh sách câu hỏi 
+7. Người dùng chọn ô kiểm những câu hỏi muốn thêm 
+8. Người dùng chọn Thêm câu hỏi 
+9. Hệ thống thông báo “Thêm câu h ỏi vào bài ki ểm tra th ành 
+công!” 
+Exception 3a. Hệ thống chưa có bài kiểm tra nào 
+6a. Hệ thống chưa có câu hỏi nào trong danh sách 
+Bảng 2.16 Usecase thêm câu hỏi vào bài kiểm tra 
+Đồ án tốt nghiệp   
+37 
+2.2.16 Usecase kéo bài kiểm tra về lớp học 
+Usecase name Kéo bài kiểm tra về lớp học 
+Description Usecase cho phép ngư ời dùng giao 1 bài ki ểm tra t ừ ngân hàng bài 
+kiểm tra vào lớp học 
+Actor Giáo viên 
+Pre-condition Người dùng đăng nhập với tài khoản giáo viên 
+Giáo viên đã tham gia ít nhất 1 lớp 
+Post-condition Người dùng giao thành công bài kiểm tra  
+Flow 1. Tại màn Quản lý lớp học, người dùng chọn lớp học muốn giao 
+2. Hệ thống hiển thị thông tin chi tiết của lớp học 
+3. Người dùng chọn tab Bài kiểm tra 
+4. Hệ thống hiển thị giao diện quản lý bài kiểm tra của lớp 
+5. Người dùng chọn giao bài kiểm tra 
+6. Hệ thống hiển thị danh sách bài kiểm tra trong ngân hàng 
+7. Người dùng chọn bài kiểm tra muốn giao 
+8. Hệ thống yêu cầu nhập thời gian bắt đầu và kết thúc 
+9. Người dùng chọn thời gian 
+10. Người dùng chọn giao bài 
+11. Hệ thống thông báo đã giao bài kiểm tra cho lớp 
+Exception 1a. Người dùng chưa tham gia lớp học nào 
+6a. Danh sách bài kiểm tra trong ngân hàng trống 
+Bảng 2.17 Usecase kéo bài kiểm tra về lớp học 
+2.2.17 Usecase làm bài kiểm tra trong lớp học 
+Usecase name Làm bài kiểm tra trong lớp học 
+Description Usecase cho phép học viên làm bài kiểm tra được giao trong lớp học 
+Actor Học viên 
+Pre-condition Học viên đã tham gia lớp học 
+Lớp học đã được giao bài kiểm tra 
+Post-condition Học viên nộp bài thành công 
+Flow 1. Tại màn lớp học offline, người dùng chọn lớp học 
+2. Hệ thống hiển thị màn các tính năng về lớp học 
+3. Người dùng chọn tab bài kiểm tra 
+4. Hệ thống hiển thị danh sách bài kiểm tra 
+5. Người dùng chọn làm bài 
+6. Hệ thống hiển thị cảnh báo “Lưu ý quan tr ọng trước khi làm 
+bài” 
+7. Người dùng chọn “Đã hiểu và đồng ý làm bài” 
+8. Hệ thống hiển thị giao diện bài kiểm tra 
+9. Người dùng chọn câu trả lời, ấn kế tiếp, cho đến khi hoàn thành 
+10. Người dùng chọn nộp bài 
+Đồ án tốt nghiệp   
+38 
+11. Hệ thống yêu cầu xác nhận nộp bài 
+12. Người dùng chọn nộp bài 
+13. Hệ thống thông báo nộp bài thành công 
+Exception 5a. Lớp học chưa có bài kiểm tra 
+7a. Người dùng không đồng ý 
+9a. Người dùng phạm quy khi thoát toàn màn hình 
+Bảng 2.18 Usecase làm bài kiểm tra trong lớp học 
+2.2.18 Usecase xem danh sách người nộp trong bài kiểm tra 
+Usecase name Xem danh sách người nộp trong bài kiểm tra 
+Description Hệ thống cho phép giáo viên và nhân viên xem danh sách học sinh nộp 
+bài 
+Actor Giáo viên, nhân viên 
+Pre-condition Người dùng đăng nhập với vai trò giáo viên hoặc nhân viên 
+Giáo viên có lớp học 
+Lớp học có bài kiểm tra 
+Post-condition Người dùng xem danh sách người nộp bài kiểm tra 
+Flow 1. Tại màn quản lý lớp học, người dùng chọn lớp học 
+2. Hệ thống hiển thị thông tin chi tiết của lớp học 
+3. Người dùng chọn tab bài kiểm tra 
+4. Hệ thống hiển thị giao diện quản lý bài kiểm tra của lớp 
+5. Người dùng chọn nút xem bài nộp ở bài kiểm tra muốn xem 
+6. Hệ thống hiển thị các thông tin chi tiết các bài học sinh đã nộp 
+Exception 5a. Lớp học chưa có bài kiểm tra nào 
+Bảng 2.19 Usecase xem danh sách người nộp trong bài kiểm tra 
+2.2.19 Usecase điểm danh học sinh 
+Usecase name Điểm danh học sinh 
+Description Usecase cho phép ngư ời dùng th ực hi ện thao tác đi ểm danh và lưu 
+thông tin điểm danh lại 
+Actor Người dùng hệ thống có chức vụ là giáo viên 
+Pre-condition Người dùng hệ thống là giáo viên và thực hiện thao tác điểm danh mỗi 
+buổi học 
+Post-condition Hệ thống hiện thị thông báo lưu thông tin điểm danh thành công 
+Flow 1. Tại màn hình lớp học người dùng chọn tab điểm danh 
+2. Hệ thống hiện thị danh sách các buổi học trước đó 
+3. Người dùng chọn nút điểm danh 
+4. Hệ thống hiện thị danh sách học sinh trong lớp học  
+5. Người dùng chọn trạng thái điểm danh của từng học sinh 
+6. Người dùng nhấn nút lưu 
+7. Hệ thống hiện thị thông báo lưu thông tin thành công 
+Đồ án tốt nghiệp   
+39 
+Exception 4a. Hệ thống hiện thị danh sách học sinh trống 
+7a. Hệ thống hiện thị thông báo: “Ngoài th ời gian điểm danh của lớp 
+học.” 
+Bảng 2.20 Usecase điểm danh học sinh 
+2.2.20 Usecase thống kê điểm danh các buổi học 
+Usecase name Thống kê điểm danh các buổi học 
+Description Usecase này cho phép người dùng xem danh sách thống kê điểm danh 
+các buổi học 
+Actor Người dùng hệ thống 
+Pre-condition Người dùng có tài khoản hệ thống 
+Post-condition Hệ thống hiện thị thông tin thống kê điểm danh các buổi học 
+Flow 1. Tại màn hình lớp học, người dùng chọn tab điểm danh 
+2. Hệ thống hiện thị ra danh sách các lịch học đã học và bảng thống 
+kê thông tin điểm danh các buổi học 
+Exception 2a. Hệ thống hiện thị ra danh sách trống 
+2b. Hệ thống hiện thị thông báo lôi: “Người dùng không có quyền xem 
+thông tin này.” 
+Bảng 2.21 Usecase thống kê điểm danh các buổi học 
+2.2.21 Usecase thêm mới lịch học cho lớp học 
+Usecase name Thêm mới lịch học cho lớp học 
+Description Usecase này cho phép người dùng thêm mới lịch học cho lớp học 
+Actor Giáo viên 
+Pre-condition Người dùng đăng nhập với tài khoản giáo viên 
+Post-condition Người dùng tạo lịch học thành công 
+Flow 1. Tại màn quản lý lớp học, chọn tab lịch học 
+2. Hệ thống hiển thị tính năng lịch học 
+3. Người dùng chọn tạo lịch học 
+4. Hệ thống hiển thị cửa sổ tạo lịch học 
+5. Người dùng nhập các thông tin để Tạo lịch học mới 
+6. Người dùng chọn Tạo 
+7. Hệ thống thông báo tạo lịch học thành công 
+Exception 5a. Hệ thống thông báo “Hãy điền đầy đủ các thông tin được đánh dấu 
+* và kiểm tra lại thông tin.” 
+Bảng 2.22 Usecase thêm lịch học mới cho lớp học 
+2.2.22 Usecase xem danh sách lịch học của lớp học 
+Usecase name Xem danh sách lịch học của lớp học 
+Description Usecase cho phép người dùng xem danh sách lịch học của một lớp học 
+Đồ án tốt nghiệp   
+40 
+Actor Người dùng hệ thống 
+Pre-condition Người dùng hệ thống có tài khoản truy cập vào hệ thống 
+Post-condition Hệ thống hiện thị ra danh sách lịch học của lớp học 
+Flow 1. Tại màn hình lớp học, người dùng chọn tab lịc học 
+2. Hệ thống hiện thị danh sách lịch học của lớp học 
+Exception 2a. Hệ thống hiện thị ra danh sách lịch học trống 
+Bảng 2.23 Usecase xem danh sách lịch học của lớp học 
+3. Phân tích yêu cầu phi chức năng 
+3.1 Yêu cầu bảo mật 
+Đối với những yêu cầu về bảo mật, đồ án sẽ tập trung vào 2 hình th ức đó là bảo mật 
+quyền dữ liệu theo người dùng và bảo mật qua việc mã hóa truy cập của người dùng. 
+Vấn đề an toàn bảo mật thông tin cũng là một yêu cầu ở trang web này. Mỗi khi người 
+dùng muốn truy cập vào hệ thống phải thông qua bước đăng nhập để có thể bảo toàn nguyên 
+vẹn thông tin, tránh nh ững trường hợp tấn công mạnh, đánh cắp dữ liệu người dùng hoặc 
+tấn công ứng dụng. 
+Mục tiêu ứng dụng hướng đến là ngư ời dùng muốn sử dụng ứng dụng để học ngoại 
+ngữ thông qua các khóa học làm bài kiểm tra và các trung tâm cũng có th ể sử dụng để có 
+thể quản lý các lớp học offline, ... 
+Trên đây là những chức năng cơ bản của hệ thống. Ở những phần sau đồ án sẽ bắt đầu 
+đi vào thiết kế hệ thống dựa trên những yêu cầu về mặt vận hành, bảo mật và chức năng đã 
+nêu ở trên. 
+3.2 Yêu cầu hiệu năng 
+Ở những phần sau c ủa đồ án sẽ bắt đầu đi vào thi ết kế một ứng dụng học tiếng anh 
+thông qua các khóa học online thêm nữa cũng phục vụ cho trnug tâm này trong việc quả lý 
+lớp học offline cơ bản không nhất thiết phải tuân theo một chuẩn nhất định, nhưng để phát 
+triển ứng dụng chuyên nghi ệp, việc tuân th ủ các nguyên t ắc kiến trúc chu ẩn là đi ều cần 
+thiết. Ứng dụng của chúng tôi đư ợc xây dựng theo mô hìn h kiến trúc client-server, trong 
+đó ReactJS đóng vai trò frontend để cung cấp giao diện trực quan và dễ dàng tương tác khi 
+Đồ án tốt nghiệp   
+41 
+sử dụng trang web. Phía backend được xây dựng bằng Spring Boot, chịu trách nhiệm xử lý 
+logic và cung cấp API để frontend gọi và lấy dữ liệu từ cơ sở dữ liệu. Dữ liệu được quản 
+lý trong cơ sở dữ liệu quan hệ MySQL với thết kế phù hợp, đảm bảo hiểu quả truy vấn và 
+tính ổn định nhất quan của dữ liệu. 
+Kiến trúc này không ch ỉ giúp ứng dụng hoạt động ổn định, mà còn dễ dàng mở rộng 
+hoặc nâng cấp khi cần. ReactJS đảm bảo trải nghiệm người dùng mượt mà trong khi Spring 
+boot xử lý nghiệp vụ logic nghiệp vụ, truy xuất dữ liệu và quản lý các yêu cầu từ phía client 
+hiệu quả. Với sự phân tách rõ ràng gi ữa frontend và backend, hệ thống trở nên linh hoạt 
+hơn, dễ dàng bảo trì và tối ưu hóa hiệu năng. 
+4.  Phân tích biểu đồ lớp phân tích 
+  
+Đồ án tốt nghiệp   
+42 
+ 
+ 
+Hình 2.2 Biểu đồ lớp phân tích 
+
+Đồ án tốt nghiệp   
+43 
+4.1 Dưới đây là bảng chi tiết thông tin của lớp 
+STT Tên lớp Chức năng 
+1.  user Bảng trung tâm lưu trữ thông tin đăng nhập và hồ 
+sơ cơ bản 
+2.  role Lưu trữ danh sách các quyền hạn 
+3.  student Lưu thông tin mở rộng dành riêng cho học viên 
+4.  teacher Lưu thông tin mở rộng dành riêng cho giáo viên 
+5.  manager Lưu thông tin mở rộng cho quản lý. 
+6.  consultant Lưu thông tin mở rộng cho tư vấn viên. 
+7.  course Lưu thông tin khóa học 
+8.  lesson Các bài học chi tiết nằm trong một khóa học 
+9.  Attach document lesson Tài liệu đính kèm cho từng bài học 
+10.  enrollment Ghi nhận việc một học viên đã tham gia vào m ột 
+khóa học 
+11.  Lesson completion Đánh dấu chi tiết học viên đã hoàn thành bài h ọc 
+nào trong khóa học đó. 
+12.  class Lưu thông tin lớp học 
+13.  Class member Danh sách thành viên trong lớp 
+14.  room Danh sách phòng học 
+15.  Class schedule Thời khóa biểu chi tiết của từng buổi học 
+16.  attendance Điểm danh học viên trong từng buổi học 
+17.  Class notification Thông báo dành riêng cho nội bộ một lớp học 
+18.  Attach document class  Tài liệu đính kèm cho các thông báo của lớp 
+19.  Submit exercise in noti Chức năng n ộp bài t ập thông qua link đính kèm 
+trong thông báo lớp học. 
+20.  Question bank Ngân hàng câu hỏi 
+21.  
+ 
+Range topic Chủ đề/Phạm vi kiến thức của câu hỏi 
+22.  Score scale Thang điểm để tính điểm cho câu hỏi. 
+23.  question Lưu nội dung câu hỏi trắc nghiệm 
+24.  answer Các phương án trả lời cho câu hỏi 
+25.  Explanation question Giải thích chi tiết tại sao đáp án đó đúng/sai 
+26.  quiz Đề thi 
+27.  Question quiz Bảng trung gian liên kết câu hỏi vào đề thi 
+28.  Shared quiz Quản lý vi ệc giao đ ề thi cho m ột lớp học cụ thể 
+trong khoảng thời gian nhất định. 
+29.  Student quiz Lưu kết quả bài làm của học viên 
+30.  Student answer Lưu chi tiết học viên đã chọn đáp án nào cho từng 
+câu hỏi trong bài làm. 
+31.  Cart item Giỏ hàng của người dùng 
+32.  orders Hóa đơn tổng 
+Đồ án tốt nghiệp   
+44 
+33.  order_detail Chi tiết các khóa học có trong hóa đơn đó 
+34.  
+ 
+post Nội dung bài vi ết blog/tin t ức hiển thị trên trang 
+chủ hoặc diễn đàn. 
+35.  notification Thông báo chung của hệ thống gửi đến người dùng 
+36.  Notification receive Bảng trung gian xác định ai đã nhận 
+37.  Invalidated token Danh sách các token bị vô hiệu hóa 
+38.  Forgot password Lưu mã OTP và thời gian hết hạn khi người dùng 
+yêu cầu lấy lại mật khẩu. 
+Bảng 2.24 Danh sách các lớp thực thể trong hệ thống 
+4.2 Bảng chi tiết thông tin của các lớp 
+- Lớp Answer 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+content Nội dung câu trả lời 
+isCorrect Câu hỏi đúng hay sai 
+order Thứ tự câu trả lời trong câu hỏi 
+createdAt Thời gian câu trả lời được tạo 
+updatedAt Thời gian cập nhật câu trả lời gần nhất 
+isActive Câu trả lời còn dùng 
+isDelete  Xóa mềm 
+Bảng 2.25 Thông tin chi tiết lớp Answer 
+- Lớp AttachDocumentClass 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+linkUrl Đường dẫn file 
+isActive Trạng thái sử dụng 
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thởi gian cập nhật 
+Bảng 2.26 Thông tin chi tiết lớp AttachDocumentClass 
+- Lớp AttachDocumentLesson 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+linkUrl Đường dẫn file 
+isActive Trạng thái sử dụng 
+Đồ án tốt nghiệp   
+45 
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thởi gian cập nhật 
+Bảng 2.27 Thông tin chi tiết lớp AttachDocumentLesson 
+- Lớp Attendance 
+Tên thuộc tính Ý nghĩa 
+Id Mã định danh 
+checkIn Thời gian điểm danh 
+status Trạng thái điểm danh 
+student Học sinh  
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Bảng 2.28 Thông tin chi tiết lớp Attendance 
+- Lớp CartItem  
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+user Chủ nhân giỏ hàng 
+course Khóa học 
+createdAt Thời gian khởi tạo 
+Bảng 2.29 Thông tin chi tiết lớp CartItem 
+- Lớp Class 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+name Tên lớp học 
+totalSession Tổng số buổi học của lớp 
+description Mô tả chi tiết về lớp học 
+subject Môn học/ chủ đề của lớp học 
+title Tiêu đề của lớp học 
+status Trạng thái của lớp học 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+teacher Giáo viên của lớp học 
+Bảng 2.30 Thông tin chi tiết lớp Class 
+ 
+Đồ án tốt nghiệp   
+46 
+- Lớp ClassMember 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+status Trạng thái tham gia của thành viên 
+clazz Lớp học mà thành vien tham gia 
+member Thành viên của lớp 
+joinDate Thời gian tham gia 
+roleInClass Chức vụ trong lớp học 
+Bảng 2.31 Thông tin chi tiết lớp ClassMember 
+- Lớp ClassNotification 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+description Mô tả chi tiết của thông báo 
+typeNotification Loại thông báo 
+isPin Trạng thái ghim 
+fromDate Thời gian nộp bài từ 
+toDate Thời gian giới hạn nộp bài 
+clazz Lớp học 
+isActive Trạng thái hoạt động  
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Bảng 2.32 Thông tin chi tiết lớp ClassNotification 
+- Lớp ClassSchedule 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+clazz Lớp học 
+room Phòng học 
+title Tiêu đề lịch học 
+startAt Thời gian bắt đầu lịch học 
+endAt Thời gian kết thúc lịch học 
+status Trạng thái lịch học 
+isActive Trạng thái hoạt động 
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Đồ án tốt nghiệp   
+47 
+Bảng 2.33 Thông tin chi tiết lớp ClassSchedule 
+- Lớp Consultant 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+user Thông tin người dùng 
+Bảng 2.34 Thông tin chi tiết lớp Consultant 
+- Lớp Course 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+title Tiêu đề khóa học 
+description Mô tả chi tiết của khóa học 
+price Giá của khóa học 
+thumbnailUrl Đường dẫn ảnh nền 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+isActive Trạng thái sử dụng  
+isDelete Trạng thái xóa mềm 
+categoryCousre Loại khóa học 
+author Tac giả 
+Bảng 2.35 Thông tin chi tiết lớp Course 
+- Lớp Enrollment 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+progress Tiến trình học 
+enrollAt Thời gian đăng ký 
+completeAt Thời gian hoàn thành 
+Bảng 2.36 Thông tin chi tiết lớp Enrollment 
+- Lớp ExplanationQuestion 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+explanationEnglish Giải thích bằng tiếng anh 
+explanationVietnamese Giải thích bằng tiếng việt 
+question Liên kết đến câu hỏi 
+createdAt Thời gian khởi tạo 
+Đồ án tốt nghiệp   
+48 
+updatedAt Thời gian cập nhật 
+isActive Trạng thái sử dụng 
+isDelete Trạng thái xóa mềm 
+Bảng 2.37 Thông tin chi tiết lớp ExplanationQuestion 
+- Lớp ForgotPassword 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+otp Mã otp 
+expiryTime Thời gian hết hạn 
+user Liên kết với bảng user 
+Bảng 2.38 Thông tin chi tiết lớp ForgotPassword 
+- Lớp InvalidatedToken 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+token token 
+expiryTime Thời gian hết hạn 
+Bảng 2.39 Thông tin chi tiết lớp InvalidatedToken 
+- Lớp Lesson 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+title Tiêu đề bài học 
+content Nội dung bài học 
+videoUrl Link video 
+duration  Thời lượng video 
+orderIndex Sắp xếp trong khóa học 
+isPreviewAble Trạng thái xem trước 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+isActive Trạng thái sử dụng 
+isDelete Trạng thái xóa mềm 
+course Liên kết đến bảng khóa học 
+Bảng 2.40 Thông tin chi tiết lớp Lesson 
+ 
+ 
+Đồ án tốt nghiệp   
+49 
+- Lớp LessonComplete 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+enrollment Liên kết đến bảng đăng ký khóa học 
+lesson Liên kết đến bảng bài học 
+completeAt Thời gian hoàn thành 
+Bảng 2.41 Thông tin chi tiết lớp LessonComplete 
+- Lớp Manager 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+user Liên kết đến bảng user 
+Bảng 2.42 Thông tin chi tiết lớp Manager 
+- Lớp Notification 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+title Tiêu đề thông báo 
+content Nội dung thông báo 
+objectId Id đối tượng liên kết 
+notiType Loại thông báo 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Bảng 2.43 Thông tin chi tiết lớp Notification 
+- Lớp NotificationReceiver 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+isRead Trạng thái đọc  
+notification Liên kết đến bảng thông báo 
+receiver  Liên kết đến bảng người dùng 
+Bảng 2.44 Thông tin chi tiết lớp NotificationReciever 
+- Lớp OrderDetail 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+Đồ án tốt nghiệp   
+50 
+priceAtPurchase Giá lúc mua 
+course Liên kết bảng khóa học 
+orders Liên kết bảng đơn hàng 
+Bảng 2.45 Thông tin chi tiết lớp OrderDetail 
+- Lớp Orders 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+totalAmount Tổng tiền đơn hàng 
+paymentMethod Phương thức thanh toán 
+transactionCode Mã giao dịch 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+status Trạng thái đơn hàng 
+user Liên kết bảng người dùng 
+Bảng 2.46 Thông tin chi tiết lớp Orders 
+- Lớp Post 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+title Tiêu đề bài post 
+content Nội dung bài post 
+themeUrl Đường dẫn hình  
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+isActive Trạng thái sử dụng 
+isDelete Trạng thái xóa mềm 
+author Tác giả 
+categoryPost Loại post 
+Bảng 2.47 Thông tin chi tiết lớp Post 
+- Lớp Question 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+content Nội dung câu hỏi 
+questionBank Liên kết đến bảng ngân hàng 
+rangeTopic Liên kết bảng chủ đề câu hỏi 
+scoreScale Liên kết bảng độ khó câu hỏi 
+Đồ án tốt nghiệp   
+51 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+isActive Trạng thái sử dụng  
+isDelete Trạng thái xóa mềm 
+Bảng 2.48 Thông tin chi tiết lớp Question 
+- Lớp QuestionBank 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+title Tiêu đề ngân hàng câu hỏi 
+linkUrl Đường dẫn file đính kèm 
+createdAt Thời gian khởi tạo  
+updatedAt Thời gian cập nhật 
+isActive Trạng thái sử dụng  
+isDelete Trạng thái xóa mềm 
+Bảng 2.49 Thông tin chi tiết lớp QuestionBank 
+- Lớp QuestionQuiz 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+order Thứ tự trong bài kiểm tra 
+question Liên kết đến bảng câu hỏi 
+quiz Liên kết đến bảng bài kiểm tra 
+Bảng 2.50 Thông tin chi tiết lớp QuestionQuiz 
+- Lớp Quiz 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+title Tiêu đề bài kiểm tra 
+description Mô tả chi tiết bài kiểm tra 
+totalQuestion Tổng số câu hỏi 
+isStudentCreated Đánh dấu là học sinh khởi tạo 
+status Trạng thái bài kiểm tra 
+isActive Trạng thái sử dụng  
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Bảng 2.51 Thông tin chi tiết lớp Quiz 
+Đồ án tốt nghiệp   
+52 
+- Lớp RangeTopic 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+content Nội dụng chủ đề câu hỏi 
+description Mô tả chi tiết 
+vietnamese Mô tả tiếng viết 
+isActive Trạng thái sử dụng 
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Bảng 2.52 Thông tin chi tiết lớp RangeTopic 
+- Lớp Room 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+name Tên lớp học vật lý 
+description Mô tả chi tiết 
+isDelete Trạng thái xóa mềm 
+isActive Trạng thái sử dụng  
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Bảng 2.53 Thông tin chi tiết lớp Room 
+- Lớp ScoreScale 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+title Tiêu đề độ khó 
+fromScore Số điểm từ 
+toScore Đến điểm 
+isDelete Trạng thái xóa mềm 
+isActive Trạng thái sử dụng  
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Bảng 2.54 Thông tin chi tiết lớp ScoreScale 
+ 
+ 
+Đồ án tốt nghiệp   
+53 
+- Lớp SharedQuiz 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+startAt Thời gian bắt đầu kiểm tra 
+endAt Thời gian kết thúc kiểm tra 
+clazz Liên kết với bảng lớp học 
+quiz Liên kết với bảng bài kiểm tra 
+isActive Trạng thái sử dụng  
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+Bảng 2.55 Thông tin chi tiết lớp SharedQuiz 
+- Lớp Student 
+Tên thuộc tính Ý nghĩa 
+Id  Mã định danh 
+education Tên trường học 
+major Chuyên ngành 
+user Liên kết với bảng người dùng 
+Bảng 2.56 Thông tin chi tiết lớp Student 
+- Lớp StudentAnswer 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+studentQuiz Liên kết bảng studentQuiz 
+question  Liên kết bảng câu hỏi 
+answer Liên kết bảng đáp án 
+isCorrect Trạng thái chính xác 
+Bảng 2.57 Thông tin chi tiết lớp StudentAnswer 
+- Lớp StudentQuiz 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+user Liên kết với bảng người dùng 
+quiz Liên kết với bảng bài kiểm tra 
+score Số điểm 
+startAt Thời gian bắt đầu làm bài 
+Đồ án tốt nghiệp   
+54 
+endAt Thời gian kết thúc làm bài 
+Bảng 2.58 Thông tin chi tiết lớp StudentQuiz 
+- Lớp SubmitExercise 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+linkUrl Đường dẫn file nộp 
+isActive Trạng thái sử dụng  
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+classNotification Liên kết với bảng classNotification 
+Bảng 2.59 Thông tin chi tiết lớp SubmitExercise 
+- Lớp Teacher 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+education Trường học đã tốt nghiệp 
+degree Bằng cấp 
+user Liên kết bảng người dùng 
+Bảng 2.60 Thông tin chi tiết lớp teacher 
+- Lớp TeacherShift 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+teacher Giáo viên 
+startAt Thời gian bắt đầu ca 
+endAt Thời gian kết thúc ca 
+shiftType Loại ca học 
+Bảng 2.61 Thông tin chi tiết lớp TeacherShift 
+- Lớp User 
+Tên thuộc tính Ý nghĩa 
+id Mã định danh 
+Email  Email người dùng 
+password Mật khẩu ng dùng 
+code Mã người dùng 
+Đồ án tốt nghiệp   
+55 
+firstName Họ ng dùng 
+LastName Tên người dùng 
+phone Sđt người dùng 
+address Địa chỉ người dùng 
+dob Ngày sinh 
+gender Giới tính 
+AvatarUrl Đường dẫn avatar 
+isActive Trạng thái sử dụng 
+isDelete Trạng thái xóa mềm 
+createdAt Thời gian khởi tạo 
+updatedAt Thời gian cập nhật 
+role Chức vụ người dùng 
+Bảng 2.62 Thông tin chi tiết lớp User 
+5.  Phân tích biểu đồ tuần tự 
+5.1 Đăng nhập 
+ 
+Hình 2.3 Sơ đồ tuần tự usecase đăng nhập 
+
+Đồ án tốt nghiệp   
+56 
+5.2 Quên mật khẩu 
+ 
+Hình 2.4 Sơ đồ tuần tự usecase quên mật khẩu 
+ 
+ 
+
+Đồ án tốt nghiệp   
+57 
+5.3 Thêm khóa học vào giỏ hàng  
+ 
+Hình 2.5 Sơ đồ tuần tự usecase thêm khóa học vào giỏ hàng 
+5.4 Mua khóa học 
+ 
+Hình 2.6 Sơ đồ tuần tự usecase mua khóa học 
+
+Đồ án tốt nghiệp   
+58 
+5.5 Tạo lớp học mới 
+ 
+Hình 2.7 Sơ đồ tuần tự usecase tạo mới lớp học 
+5.6 Thêm học sinh vào lớp học 
+ 
+Hình 2.8 Sơ đồ tuần tự usecase thêm học sinh vào lớp học 
+ 
+
+Đồ án tốt nghiệp   
+59 
+5.7 Tạo thông báo trong lớp học 
+ 
+Hình 2.9 Sơ đồ tuần tự usecase tạo thông báo trong lớp học 
+ 
+ 
+5.8 Nộp link bài trong thông báo 
+ 
+Hình 2.10 Sơ đồ tuần tự usecase nộp link bài tập trong thông báo 
+
+Đồ án tốt nghiệp   
+60 
+5.9 Xem danh sách học sinh đã nộp bài trong thông báo 
+ 
+Hình 2.11 Sơ đồ tuần tự usecase xem danh sách học sinh đã nộp bài trong thông báo 
+ 
+ 
+5.10 Tạo mới ngân hàng đề 
+ 
+Hình 2.12 Sơ đồ tuần tự usecase tạo mới ngân hàng đề 
+
+Đồ án tốt nghiệp   
+61 
+5.11 Thêm câu hỏi vào ngân hàng đề 
+ 
+Hình 2.13 Sơ đồ tuần tự usecase thêm câu hỏi vào ngân hàng đề 
+ 
+ 
+5.12 Thêm ngân hàng đề bằng cách đọc file kết hợp với AI 
+ 
+Hình 2.14 Sơ đồ tuần tự usecase thêm ngân hàng đề bằng đọc file kết hợp với AI 
+
+Đồ án tốt nghiệp   
+62 
+5.13 Chuyển ngân hàng đề thành bài kiểm tra  
+ 
+ 
+Hình 2.15 Sơ đồ tuần tự usecase chuyển ngân hàng đề thành bài kiểm tra 
+ 
+ 
+5.14 Thêm mới bài kiểm tra 
+ 
+ 
+Hình 2.16 Sơ đồ tuần tự usecase thêm mới bài kiểm tra 
+ 
+
+Đồ án tốt nghiệp   
+63 
+5.15 Thêm câu hỏi vào bài kiểm tra 
+ 
+ 
+Hình 2.17 Sơ đồ tuần tự usecase thêm câu hỏi vào bài kiểm tra 
+ 
+5.16  Kéo bài kiểm tra về lớp học 
+ 
+ 
+Hình 2.18 Sơ đồ tuần tự usecase kéo bài kiểm tra về lớp học 
+ 
+
+Đồ án tốt nghiệp   
+64 
+5.17 Làm bài kiểm tra trong lớp học 
+ 
+Hình 2.19 Sơ đồ tuần tự usecase làm bài kiểm tra trong lớp học 
+ 
+5.18  Xem danh sách người nộp bài kiểm tra 
+ 
+Hình 2.20 Sơ đồ tuần tự usecase xem danh sách người nộp bài kiểm tra 
+
+Đồ án tốt nghiệp   
+65 
+5.19  Điêm danh lớp học 
+ 
+Hình 2.21 Sơ đồ tuần tự usecase điểm danh lớp học 
+5.20  Thống kê điểm danh các buổi học 
+ 
+Hình 2.22 Sơ đồ tuần tự usecase thống kê điểm danh các buổi học 
+5.21  Thêm mới lịch học cho lớp học 
+ 
+Hình 2.23 Sơ đồ tuần tự usecase thêm lịch học mới cho lớp học 
+
+Đồ án tốt nghiệp   
+66 
+5.22  Xem danh sách lịch học của lớp học 
+ 
+Hình 2.24 Sơ đồ tuần tự usecase xem danh sách lịch học của lớp học 
+6.  Thiết kế hệ thống cơ sở dữ liệu 
+ 
+
+Đồ án tốt nghiệp   
+67 
+ 
+Hình 2.58: Thiết kế hệ thống cơ sở dữ liệu 
+
+Đồ án tốt nghiệp   
+68 
+7.  Kết luận 
+Như vậy chương 2 đã trình bày chi ti ết về các kịch bản usecase cho chức năng của 
+trang web, qua đó th ể hiện được các biểu đồ tuần tự, biểu đồ lớp cơ sở dữ liệu, lớp phân 
+tích của các chức năng.  
+ 
+ 
+  
+Đồ án tốt nghiệp   
+69 
+CHƯƠNG 3: CÀI ĐẶT VÀ KIỂM THỬ HỆ THỐNG 
+1.  Kiến trúc hệ thống và môi trường triển khai 
+1.1. Yêu cầu môi trường  
+ Để đảm bảo hệ thống vận hành ổn định và đ ồng bộ giữa môi trư ờng phát tri ển và môi 
+trường triển khai, nhóm thực hiện xác định các cấu hình phần cứng và phần mềm tiêu chuẩn 
+sau: 
+• Phần cứng: 
+o RAM: Tối thiểu 8GB. 
+o Disk: SSD với dung lượng trống tối thiểu 10GB. 
+• Phần mềm nền tảng: 
+o JDK: Phiên bản 17 
+o Node.js: Phiên bản 18+ 
+o Cơ sở dữ liệu: MySQL Server 8.0. 
+o Trình quản lý gói: Maven 3 và npm/yarn 
+1.2. Mô hình triển khai tổng quan 
+Hệ thống tuân thủ kiến trúc Client-Server tách biệt hoàn toàn. Giao tiếp giữa hai phân 
+hệ được thực hiện thông qua chuẩn RESTful API và bảo mật bằng cơ chế JWT 
+Đồ án tốt nghiệp   
+70 
+Hình 3.1 Mô hình triển khai tổng quá 
+2.  Cài đặt và Triển khai Phân hệ Backend 
+2.1. Công nghệ và Thư viện sử dụng 
+• Framework chính: Spring Boot 3. 
+• Bảo mật: Spring Security kết hợp với thư viện jjwt để xử lý xác thực không trạng thái . 
+• Tích hợp AI: spring-ai-google-genai kết nối với mô hình Gemini Flash 2.5. 
+• Xử lý tài liệu: Apache PDFBox & POI để bóc tách dữ liệu đề thi từ file PDF/Word. 
+• Lưu trữ video và tài liệu: Cloudinary. 
+
+Đồ án tốt nghiệp   
+71 
+2.2. Tổ chức mã nguồn 
+Mã nguồn Backend được tổ chức theo mô hình phân tầng chuẩn mực để đảm bảo tính bảo 
+trì: 
+ 
+Hỉnh 3.2 Tổ chức mã nguồn backend 
+
+Đồ án tốt nghiệp   
+72 
+2.3. Cấu hình hệ thống 
+Các tham số quan trọng được quản lý tập trung tại application.properties: 
+• Server và Database: Hệ thống chạy trên c ổng 8888 đ ể tránh xung đ ột cổng mặc định. 
+Database sử dụng MySQL với cơ chế ddl-auto=update để tự động đồng bộ cấu trúc bảng. 
+• Cấu hình Bảo mật: 
+    ◦ Cơ chế CORS được cấu hình cho phép các domain frontend truy cập. 
+    ◦ Mật khẩu người dùng được mã hóa bằng thuật toán bcrypt. 
+• Tích hợp VNPay: Cấu hình mã đối tác và khóa bí mật để tạo chữ ký số bảo mật cho giao 
+dịch thanh toán. 
+3.  Cài đặt và Triển khai Phân hệ Frontend 
+Phân hệ Frontend đảm nhận việc hiển thị giao diện và tương tác ngư ời dùng, được tối ưu 
+hóa cho trải nghiệm SPA. 
+3.1. Công nghệ và Thư viện sử dụng 
+• Core: ReactJS + TypeScript. 
+• Build Tool: Vite. 
+• UI Library: Ant Design. 
+• State Management: Zustand. 
+• Editor: TipTap. 
+3.2. Tổ chức mã nguồn 
+ 
+Đồ án tốt nghiệp   
+73 
+ 
+Hình 3.3 Tổ chức mã nguồn frontend 
+
+Đồ án tốt nghiệp   
+74 
+3.3. Cơ chế giao tiếp và xử lý dữ liệu 
+• Axios Interceptor: Hệ thống cấu hình axios instance tại lib/axios.ts để tự động đính kèm 
+Bearer Token vào Header c ủa mọi request, giúp duy trì phiên đăng nhập mà không c ần 
+truyền token thủ công. 
+• Quản lý State: Sử dụng Zustand kết hợp với middleware persist để lưu trữ trạng thái giỏ 
+hàng và Token vào LocalStorage, đ ảm bảo dữ liệu không b ị mất khi ngư ời dùng t ải lại 
+trang 
+3.4. Một số giao diện chức năng đặc trưng 
+ 
+Hình 3.4 Giao diện trang chủ 
+3.4.1. Giao diện phân hệ ngân hàng đề tích hợp AI 
+
+Đồ án tốt nghiệp   
+75 
+ 
+ 
+Hỉnh 3.6 Giao diện phân tích ngân hàng đề bằng AI 
+
+Đồ án tốt nghiệp   
+76 
+3.4.2. Giao diện quản lý lớp học, điểm danh, kiểm tra 
+ 
+Hình 3.7 Giao diện quản lý lớp học 
+ 
+Hình 3.8 Giao diện điểm danh lớp học 
+
+Đồ án tốt nghiệp   
+77 
+ 
+Hình 3.9 Giao diện xác nhận yêu cầu làm bài kiểm tra 
+3.4.3. Giao diện giỏ hàng và thanh toán VNPay 
+ 
+Hình 3.10 Giao diện lịch sử đơn hàng 
+
+Đồ án tốt nghiệp   
+78 
+ 
+Hình 3.12 Giao diện giỏ hàng của tôi 
+4.  Thử nghiệm và đánh giá 
+Để đánh giá tính đúng đắn và độ ổn định của hệ thống, nhóm thực hiện áp dụng phương 
+pháp Kiểm thử Hộp đen ở cấp độ Kiểm thử Hệ thống. Các kỹ thuật cụ thể được lựa chọn 
+bao gồm: 
+• Phân hoạch tương đương: Áp d ụng cho các form nhập liệu và module xử lý file của 
+AI. 
+• Kiểm thử theo kịch bản: Áp dụng cho các luồng nghiệp vụ phức tạp như Thanh toán 
+và Quy trình làm bài thi 
+• Phân tích giá tr ị biên: Kiểm chứng các ràng buộc về thời gian làm bài và gi ới hạn sĩ 
+số lớp học. 
+Dưới đây là các tính năng quan trọng của hệ thống cần kiểm thử chi 
+
+Đồ án tốt nghiệp   
+79 
+4.1. Tích hợp AI tạo ngân hàng câu hỏi 
+Đầu vào của chức năng này là các file tài li ệu. Do không thể test mọi file, nhóm chia đầu 
+vào thành các lớp tương đương: Lớp hợp lệ (PDF/Word), Lớp không hợp lệ (Sai định dạng, 
+file rỗng), và Lớp dữ liệu đặc biệt (File ảnh, công thức). 
+Mã 
+Mục tiêu 
+kiểm thử 
+Các bước thực hiện Dữ liệu đầu vào Kết quả mong đợi 
+Trạng 
+thái 
+AI_01 
+Kiểm tra 
+với file 
+chuẩn 
+1. Vào Ngân hàng đề 
+-> Tạo từ AI 
+2. Upload file PDF. 
+3. Nhấn "Phân tích". 
+File 
+De_thi_TOEIC.pdf 
+-API 
+/api/v1/ai/analysis-
+question trả về mã 200. 
+- JSON trả về có đủ 
+danh sách câu hỏi, đáp 
+án đúng. 
+- Hiển thị đúng lên 
+giao diện ReactJS. 
+Pass 
+AI_02 
+Kiểm tra 
+với file 
+sai định 
+dạng  
+1. Upload file không 
+phải văn bản. 
+2. Quan sát phản hồi. 
+File 
+Chuong_trinh.exe 
+hoặc Video.mp4 
+- Frontend chặn ngay 
+từ bước chọn file. 
+- Hoặc Backend trả lỗi 
+"Định dạng không hỗ 
+trợ". 
+Pass 
+AI_03 
+Kiểm tra 
+khả năng 
+xử lý của 
+Google 
+Gemini 
+1. Upload file chứa 
+nội dung không phải 
+đề thi 
+2. Nhấn "Phân tích". 
+File 
+Don_xin_phep.docx 
+- AI trả về JSON rỗng 
+hoặc thông báo: 
+"Không tìm thấy câu 
+hỏi trắc nghiệm hợp 
+lệ". 
+Pass 
+Đồ án tốt nghiệp   
+80 
+AI_04 
+  
+Kiểm tra 
+lưu trữ 
+vào 
+CSDL 
+1. Sau khi AI phân 
+tích xong. 
+2. Nhấn nút "Lưu 
+ngân hàng đề". 
+Danh sách câu hỏi 
+JSON từ bước 
+AI_01 
+-Gọi API 
+/api/v1/question/create-
+for-ai thành công. 
+- Dữ liệu xuất hiện 
+trong màn hình "Danh 
+sách ngân hàng đề". 
+Pass 
+Bảng 3.1 Kịch bản kiểm thử chức năng phân tích ngân hàng bằng AI 
+4.2. Thanh toán khóa học  
+Đây là ch ức năng quan tr ọng liên quan đ ến tài chính. Nhóm s ử dụng kỹ thuật Kiểm thử 
+luồng nghiệp vụ để đảm bảo quy trình đi t ừ Giỏ hàng đến khi kích ho ạt khóa học diễn ra 
+trọn vẹn. Đồng thời, áp dụng kỹ thuật Đoán lỗi để kiểm tra tính bảo mật trên URL thanh 
+toán 
+Mã 
+Mục tiêu 
+kiểm thử 
+Các bước thực hiện 
+Dữ liệu đầu 
+vào 
+Kết quả mong đợi 
+Trạng 
+thái 
+PAY_01 
+Thanh toán 
+thành công  
+1. Học viên thêm 
+khóa học vào giỏ -> 
+Thanh toán. 
+2. Nhập thẻ test tại 
+cổng VNPay 
+Sandbox. 
+3. Xác thực OTP. 
+Thẻ NCB, 
+OTP: 123456, 
+Số tiền: 
+500.000 VNĐ 
+- Redirect về trang 
+OrderStatus báo thành 
+công. 
+- Trạng thái đơn hàng 
+trong DB chuyển từ 
+PENDING sang 
+COMPLETED. 
+- Khóa học hiển thị trong 
+"Khóa học của tôi". 
+Pass 
+PAY_02 Bảo mật: 
+Cố tình sửa 
+1. Tại trang chuyển 
+hướng sang VNPay. 
+URL gian lận - Cổng VNPay báo lỗi  Pass 
+Đồ án tốt nghiệp   
+81 
+giá tiền 
+trên URL 
+2. Copy URL, sửa 
+tham số 
+vnp_Amount thành 
+1000 VNĐ. 
+3. Truy cập URL đã 
+sửa. 
+- Giao dịch bị chặn, 
+không trừ tiền thẻ. 
+PAY_03 
+Hủy giao 
+dịch giữa 
+chừng 
+1. Chuyển sang 
+trang VNPay. 
+2. Nhấn nút "Hủy 
+thanh toán" tại giao 
+diện VNPay. 
+N/A 
+- Redirect về Web 
+LearnEZ với mã lỗi. 
+- Thông báo "Giao dịch 
+đã bị hủy". 
+- Đơn hàng giữ nguyên 
+trạng thái hoặc chuyển 
+sang CANCELLED. 
+Pass 
+Bảng 3.2 Kịch bản kiểm thử chức năng thanh toán khóa học 
+4.3. Quản lý lớp học và làm bài kiểm tra  
+Phân hệ này có logic phức tạp về thời gian và trạng thái. Nhóm sử dụng kỹ thuật Phân tích 
+giá trị biên để kiểm tra hành vi hệ thống tại thời điểm kết thúc bài thi và kỹ thuật Chuyển 
+đổi trạng thái cho quy trình điểm danh 
+Mã 
+Mục tiêu 
+kiểm thử 
+Các bước thực 
+hiện 
+Dữ liệu đầu 
+vào 
+Kết quả mong đợi 
+Trạng 
+thái 
+LMS_01 
+Tự động 
+nộp bài 
+khi hết 
+giờ 
+1. Học sinh vào 
+làm bài kiểm tra. 
+Bài thi 15 
+phút, Quiz 
+ID: 101 
+- Hệ thống tự động gọi API 
+/api/v1/quiz/submit-quiz-in-
+class. 
+Pass 
+Đồ án tốt nghiệp   
+82 
+2. Chọn đáp án 
+nhưng không 
+bấm nộp. 
+3. Chờ đồng hồ 
+đếm ngược về 
+00:00. 
+- Bài thi được thu, tính điểm 
+các câu đã chọn. 
+- Chuyển hướng sang trang 
+kết quả. 
+LMS_02 
+Điểm 
+danh lớp 
+học 
+1. Giáo viên vào 
+quản lý lớp. 
+2. Chọn buổi học 
+-> Chuyển trạng 
+thái học sinh A 
+sang "Vắng". 
+3. Lưu lại. 
+Học sinh A, 
+Trạng thái: 
+ABSENT 
+- API 
+/api/v1/class/attendance trả 
+về thành công. 
+ 
+Pass 
+LMS_03 
+Kiểm tra 
+quyền 
+truy cập 
+bài thi 
+1. Học sinh chưa 
+tham gia lớp cố 
+tình truy cập link 
+bài thi của lớp 
+đó. 
+User ID: 
+Student_B 
+- Hệ thống báo lỗi 
+- Không hiển thị nội dung đề 
+thi. 
+Pass 
+Bảng 3.3 Kịch bản kiểm thử chức năng quản lý lớp học và làm bài kiểm tra 
+5.  Kết luận 
+Trong chương 3, nhóm nghiên c ứu đã trình bày chi ti ết về quá trình hiện thực hóa hệ 
+thống từ bản thiết kế sang sản phẩm thực tế. 
+• Về mặt cài đặt, hệ thống đã được triển khai thành công trên môi trư ờng tiêu chuẩn 
+với Java 17, Spring Boot 3.3 và ReactJS 18, s ử dụng các công ngh ệ tiên tiến như 
+Vite và Zustand để tối ưu hiệu năng. 
+Đồ án tốt nghiệp   
+83 
+• Kết quả kiểm thử cho thấy các phân hệ cốt lõi như tích hợp AI, thanh toán điện tử 
+và bảo mật đều hoạt động ổn định, đáp ứng đúng các yêu cầu chức năng và phi chức 
+năng đã đặt ra. 
+Mặc dù vẫn còn một số hạn chế về giao diện người dùng trên thi ết bị di động, nhưng 
+về cơ bản, hệ thống đã sẵn sàng để đưa vào vận hành thử nghiệm thực tế. 
+  
+Đồ án tốt nghiệp   
+84 
+ KẾT LUẬN  
+Sau quá trình nghiên c ứu, phân tích và tri ển khai thực hiện, nhóm thực hiện đề tài 
+đã hoàn thành m ục tiêu xây d ựng hệ thống quản lý đào t ạo và kinh doanh khóa h ọc. Sản 
+phẩm không chỉ đáp ứng các yêu cầu cơ bản của một hệ thống LMS mà còn tích hợp các 
+tính năng thương mại điện tử và công nghệ AI hiện đại. 
+Về mặt chức năng và nghiệp vụ: Hệ thống đã hoàn thiện 05 phân hệ nghiệp vụ cốt lõi, 
+tạo nên một quy trình khép kín phục vụ cho 4 nhóm đối tượng: Admin, Giáo viên, Tư vấn 
+viên và Học viên. Những điểm nhấn nổi bật bao gồm: 
+• Số hóa toàn diện quy trình đào tạo như: xếp thời khóa biểu thông minh, điểm danh 
+điện tử và quy trình giao/nộp bài tập trực tuyến. 
+• Thương mại hóa giáo dục: Tích hợp thành công cổng thanh toán VNPay, cho phép 
+xử lý giao dịch tự động, duyệt đơn hàng và kích hoạt khóa học ngay lập tức. 
+• Ứng dụng Generative AI đột phá: Tính năng tự động phân tích và bóc tách đề thi từ 
+file PDF/Word đã giúp gi ảm thiểu tới 90% thời gian nhập liệu cho giáo viên, gi ải 
+quyết bài toán tốn nhiều nhân lực nhất trong khâu quản lý ngân hàng câu hỏi. 
+Về mặt công nghệ và kỹ thuật: Chúng tôi đã xây dựng được một nền tảng kỹ thuật vững 
+chắc, đảm bảo khả năng mở rộng trong tương lai: 
+• Kiến trúc hệ thống tách biệt hoàn toàn giữa frontend và backend, giao tiếp qua chuẩn 
+RESTful API, tạo điều kiện thuận lợi cho việc tích hợp với các hệ thống thứ ba. 
+• Cơ chế bảo mật đa lớp với xác thực JWT và phân quyền chi tiết đến từng API, đảm 
+bảo an toàn dữ liệu. 
+• Cơ sở dữ liệu MySQL được thiết kế chuẩn hóa, đảm bảo tính toàn vẹn dữ liệu cho 
+các nghiệp vụ quan trọng như giao dịch tài chính và lưu trữ kết quả thi cử. 
+Các hạn chế tồn tại 
+Đồ án tốt nghiệp   
+85 
+• Hiệu năng x ử lý Video:  Do chưa tích h ợp các gi ải pháp CDN và công ngh ệ 
+streaming, việc xem video bài gi ảng có th ể gặp hiện tượng giật/lag khi lưu lư ợng 
+truy cập tăng đột biến hoặc băng thông phía người dùng không ổn định. 
+• Độ chính xác của AI: Modul phân tích đề thi phụ thuộc lớn vào chất lượng file đầu 
+vào và kỹ thuật prompt engineering. Với các tài li ệu mờ, nhòe ho ặc có định dạng 
+cấu trúc quá phức tạp, AI vẫn có tỷ lệ nhận diện sai lệch. 
+• Trải nghiệm trên thiết bị di động: Hệ thống hiện tại mới chỉ hỗ trợ responsive design 
+trên nền tảng Web. 
+Hướng phát triển trong tương lai 
+• Dựa trên nền tảng hiện có, nhóm đề xuất lộ trình nâng cấp sản phẩm để tiệm cận với 
+nhu cầu thực tế của doanh nghiệp: 
+• Tối ưu hóa trải nghiệm: Tận dụng hệ thống Backend API sẵn có để phát triển ứng 
+dụng di đ ộng đa n ền tảng, giúp h ọc viên có th ể học tập mọi lúc m ọi nơi v ới trải 
+nghiệm Native tốt nhất. 
+• Nâng cấp hạ tầng giao ti ếp: Chuyển đổi module thông báo và đi ểm danh sang s ử 
+dụng giao thức WebSocket, cho phép tương tác t ức thì giữa giáo viên và h ọc viên 
+mà không có độ trễ. 
+• Ứng dụng AI chuyên sâu: 
+o Xây dựng hệ thống gợi ý khóa học cá nhân hóa d ựa trên lịch sử học tập và kết 
+quả thi. 
+o Phát triển chatbot trợ giảng AI hoạt động 24/7, có khả năng trả lời thắc mắc của 
+học viên dựa trên ngữ cảnh và dữ liệu bài học cụ thể. 
+  
+Đồ án tốt nghiệp   
+86 
+TÀI LIỆU THAM KHẢO 
+ 
+[1] MySQL Tutorial [Online]. Available:  
+https://www.geeksforgeeks.org/mysql/mysql-tutorial/ 
+[2] Tổng quan mô hình Client-Server [Online]. Available: 
+https://www.geeksforgeeks.org/system-design/client-server-model/ 
+[3] Tổng quan Spring boot [Online]. Available: 
+https://spring.io/projects/spring-boot 
+[4] Tổng quan Spring Security [Online]. Available:  
+https://spring.io/projects/spring-security 
+[5] Tổng quan Spring JPA [Online]. Available:  
+https://spring.io/projects/spring-data-jpa 
+[6] Tổng quan Spring AI [Online]. Available:  
+https://spring.io/projects/spring-ai 
+[7] Cổng thanh toán VNPay-QR. Available:  
+https://sandbox.vnpayment.vn/apis/ 
+[8] Tài liệu Gemini API. Available:  
+https://ai.google.dev/gemini-api/docs?hl=vi 
+ 
+ 
+ 
