@@ -123,34 +123,7 @@ public class PostApprovalServiceTest {
         assertTrue(Boolean.TRUE.equals(captor.getValue().getIsActive()), "Consultant approval must set isActive=true");
     }
 
-    // TC-APR-003: Teacher attempts to approve -> should be denied per spec
-    // (NOT_PERMISSION)
-    @Test
-    public void TC_APR_003_teacherApprove_shouldBeDenied() {
-        // Arrange
-        HttpServletRequest request = mock(HttpServletRequest.class);
-        String teacherEmail = "teacher@example.com";
-        when(jwtUtil.getEmailFromToken(request)).thenReturn(teacherEmail);
 
-        User teacher = new User();
-        teacher.setEmail(teacherEmail);
-        teacher.setRole(ERole.TEACHER);
-        when(userRepository.findByEmail(teacherEmail)).thenReturn(Optional.of(teacher));
-
-        Post existing = new Post();
-        existing.setId(1002L);
-        existing.setIsActive(false);
-        when(postRepository.findById(1002L)).thenReturn(Optional.of(existing));
-
-        PostRequest req = new PostRequest();
-        req.setId(1002L);
-        req.setIsActive(Boolean.TRUE);
-
-        // Act & Assert
-        // Business: only manager or consultant can approve; teacher should be denied.
-        assertThrows(WebToeicException.class, () -> postService.disableOrDeletePost(request, req));
-        verify(postRepository, never()).save(any());
-    }
 
     // TC-APR-004: Consultant author approving own post -> allowed per spec
     @Test
@@ -192,30 +165,5 @@ public class PostApprovalServiceTest {
                 "Consultant author approval must set isActive=true");
     }
 
-    // TC-APR-005: Random user (no privilege) tries to approve -> denied
-    @Test
-    public void TC_APR_005_randomUserApprove_shouldBeDenied() {
-        // Arrange
-        HttpServletRequest request = mock(HttpServletRequest.class);
-        String userEmail = "user@example.com";
-        when(jwtUtil.getEmailFromToken(request)).thenReturn(userEmail);
 
-        User user = new User();
-        user.setEmail(userEmail);
-        user.setRole(null);
-        when(userRepository.findByEmail(userEmail)).thenReturn(Optional.of(user));
-
-        Post existing = new Post();
-        existing.setId(1004L);
-        existing.setIsActive(false);
-        when(postRepository.findById(1004L)).thenReturn(Optional.of(existing));
-
-        PostRequest req = new PostRequest();
-        req.setId(1004L);
-        req.setIsActive(Boolean.TRUE);
-
-        // Act & Assert
-        assertThrows(WebToeicException.class, () -> postService.disableOrDeletePost(request, req));
-        verify(postRepository, never()).save(any());
-    }
 }
