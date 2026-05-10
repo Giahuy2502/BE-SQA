@@ -110,30 +110,28 @@ public class OrderServiceImpl implements OrderService {
                 .orElseThrow(() -> new WebToeicException(ResponseCode.CANNOT_GET, ResponseObject.CART_ITEM));
         User user = userRepository.findByEmail(jwtUtil.getEmailFromToken(request))
                 .orElseThrow(() -> new WebToeicException(ResponseCode.NOT_EXISTED, ResponseObject.USER));
-        synchronized (orderCreationStripe(user.getEmail(), cartItem.getCourse().getId())) {
-            if (orderDetailRepository.existsByUserAndCourse(user.getEmail(), cartItem.getCourse().getId())) {
-                throw new WebToeicException(ResponseCode.EXISTED, ResponseObject.ORDER);
-            }
-            if (enrollmentRepository.existsByUserAndCourse(user, cartItem.getCourse())) {
-                throw new WebToeicException(ResponseCode.EXISTED, ResponseObject.ENROLLMENT);
-            }
-            Orders order = Orders.builder()
-                    .paymentMethod(EPaymentMethod.VN_PAY)
-                    .status(EStatusOrder.PENDING)
-                    .user(user)
-                    .totalAmount(cartItem.getCourse().getPrice())
-                    .build();
-            Orders savedOrder = orderRepository.save(order);
-
-            OrderDetail orderDetail = OrderDetail.builder()
-                    .orders(savedOrder)
-                    .course(cartItem.getCourse())
-                    .priceAtPurchase(cartItem.getCourse().getPrice())
-                    .build();
-            OrderDetail savedOrderDetail = orderDetailRepository.save(orderDetail);
-            cartItemRepository.deleteById(cartItem.getId());
-            return convertUtil.convertOrderToDto(request, savedOrder, savedOrderDetail);
+        if (orderDetailRepository.existsByUserAndCourse(user.getEmail(), cartItem.getCourse().getId())) {
+            throw new WebToeicException(ResponseCode.EXISTED, ResponseObject.ORDER);
         }
+        if (enrollmentRepository.existsByUserAndCourse(user, cartItem.getCourse())) {
+            throw new WebToeicException(ResponseCode.EXISTED, ResponseObject.ENROLLMENT);
+        }
+        Orders order = Orders.builder()
+                .paymentMethod(EPaymentMethod.VN_PAY)
+                .status(EStatusOrder.PENDING)
+                .user(user)
+                .totalAmount(cartItem.getCourse().getPrice())
+                .build();
+        Orders savedOrder = orderRepository.save(order);
+
+        OrderDetail orderDetail = OrderDetail.builder()
+                .orders(savedOrder)
+                .course(cartItem.getCourse())
+                .priceAtPurchase(cartItem.getCourse().getPrice())
+                .build();
+        OrderDetail savedOrderDetail = orderDetailRepository.save(orderDetail);
+        cartItemRepository.deleteById(cartItem.getId());
+        return convertUtil.convertOrderToDto(request, savedOrder, savedOrderDetail);
     }
 
     @Override
@@ -144,29 +142,27 @@ public class OrderServiceImpl implements OrderService {
         User user = userRepository.findByEmail(jwtUtil.getEmailFromToken(request))
                 .orElseThrow(() -> new WebToeicException(ResponseCode.NOT_EXISTED, ResponseObject.USER));
 
-        synchronized (orderCreationStripe(user.getEmail(), course.getId())) {
-            if (orderDetailRepository.existsByUserAndCourse(user.getEmail(), course.getId())) {
-                throw new WebToeicException(ResponseCode.EXISTED, ResponseObject.ORDER);
-            }
-            if (enrollmentRepository.existsByUserAndCourse(user, course)) {
-                throw new WebToeicException(ResponseCode.EXISTED, ResponseObject.ENROLLMENT);
-            }
-            Orders order = Orders.builder()
-                    .paymentMethod(EPaymentMethod.VN_PAY)
-                    .status(EStatusOrder.PENDING)
-                    .user(user)
-                    .totalAmount(course.getPrice())
-                    .build();
-            Orders savedOrder = orderRepository.save(order);
-
-            OrderDetail orderDetail = OrderDetail.builder()
-                    .orders(savedOrder)
-                    .course(course)
-                    .priceAtPurchase(course.getPrice())
-                    .build();
-            OrderDetail savedOrderDetail = orderDetailRepository.save(orderDetail);
-
-            return convertUtil.convertOrderToDto(request, savedOrder, savedOrderDetail);
+        if (orderDetailRepository.existsByUserAndCourse(user.getEmail(), course.getId())) {
+            throw new WebToeicException(ResponseCode.EXISTED, ResponseObject.ORDER);
         }
+        if (enrollmentRepository.existsByUserAndCourse(user, course)) {
+            throw new WebToeicException(ResponseCode.EXISTED, ResponseObject.ENROLLMENT);
+        }
+        Orders order = Orders.builder()
+                .paymentMethod(EPaymentMethod.VN_PAY)
+                .status(EStatusOrder.PENDING)
+                .user(user)
+                .totalAmount(course.getPrice())
+                .build();
+        Orders savedOrder = orderRepository.save(order);
+
+        OrderDetail orderDetail = OrderDetail.builder()
+                .orders(savedOrder)
+                .course(course)
+                .priceAtPurchase(course.getPrice())
+                .build();
+        OrderDetail savedOrderDetail = orderDetailRepository.save(orderDetail);
+
+        return convertUtil.convertOrderToDto(request, savedOrder, savedOrderDetail);
     }
 }
