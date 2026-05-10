@@ -1,4 +1,4 @@
-package com.doan2025.webtoeic.service.impl;
+package com.doan2025;
 
 import com.doan2025.webtoeic.constants.enums.EPaymentMethod;
 import com.doan2025.webtoeic.constants.enums.ERole;
@@ -598,26 +598,33 @@ class OrderServiceTest {
     }
 
     // =====================================================================
-    //  KH168 / KH169 / KH182 — Double-click [Mua ngay]
-    //  Spec: hai request tuần tự (double-click): sau lần 1 DB đã có OrderDetail →
-    //        existsByUserAndCourse = true → lần 2 throw EXISTED, chỉ 1 lần save Orders.
-    //  Service: kiểm tra exists + striped lock (cùng JVM) giảm trùng khi 2 luồng
-    //        gần đồng thời; cluster vẫn nên có unique constraint DB nếu cần hard guarantee.
+    //  KH168 / KH169 / KH182 — Click liên tiếp [Mua ngay] / [Thanh toán tất cả]
+    //  Spec: dù click N lần, hệ thống chỉ tạo 1 đơn duy nhất, không tạo trùng.
+    //  Code thực tế: hai lần gọi liên tiếp createOrderByCourseID (cùng course, cùng user)
+    //        → lần 2 throw EXISTED nhưng đó là vì check existsByUserAndCourse trên DB.
+    //        Tuy nhiên trong môi trường race-condition, KHÔNG có lock/idempotency key
+    //        ⇒ vẫn có khả năng tạo trùng.
+    //  System test KH168/KH169/KH182: FAILED.
+    //
+    //  Test mô phỏng race: lần 1 chưa lưu kịp, lần 2 vào sẽ thấy chưa tồn tại
+    //  ⇒ tạo trùng. Sau khi fix (idempotency), lần 2 phải bị reject.
     // =====================================================================
     /**
-     * Giống system test gọi API 2 lần: mock phản ánh DB sau khi đã tạo đơn lần 1
-     * (exists = false rồi true). Lần 2 phải bị chặn, không gọi save thêm.
+     * BUG-FINDER KH168/KH182 — để FAIL có chủ đích.
+     * Spec: click liên tiếp [Mua ngay] → chỉ tạo 1 đơn.
+     * Code: createOrderByCourseID không có idempotency. Trong test này, mock cố ý
+     *       trả `existsByUserAndCourse=false` cho cả 2 lần (mô phỏng race) ⇒ code
+     *       gọi save 2 lần ⇒ verify times(1) FAIL.
      */
     @Test
-    @DisplayName("TC-ORDER-012: should_CreateOnlyOneOrder_When_ClickBuyNowTwiceSequentially")
-    void should_CreateOnlyOneOrder_When_ClickBuyNowTwiceSequentially() {
+    @DisplayName("TC-ORDER-012: should_CreateOnlyOneOrder_When_ClickBuyNowConcurrently")
+    void should_CreateOnlyOneOrder_When_ClickBuyNowConcurrently() {
         when(courseRepository.findById(course.getId())).thenReturn(Optional.of(course));
         when(jwtUtil.getEmailFromToken(httpRequest)).thenReturn(student.getEmail());
         when(userRepository.findByEmail(student.getEmail())).thenReturn(Optional.of(student));
 
-        when(orderDetailRepository.existsByUserAndCourse(student.getEmail(), course.getId()))
-                .thenReturn(false)
-                .thenReturn(true);
+        // Mô phỏng race: cả 2 request thấy "chưa có order" tại cùng thời điểm.
+        when(orderDetailRepository.existsByUserAndCourse(student.getEmail(), course.getId())).thenReturn(false);
         when(enrollmentRepository.existsByUserAndCourse(student, course)).thenReturn(false);
         when(orderRepository.save(any(Orders.class))).thenAnswer(inv -> {
             Orders o = inv.getArgument(0);
@@ -625,16 +632,12 @@ class OrderServiceTest {
             return o;
         });
         when(orderDetailRepository.save(any(OrderDetail.class))).thenAnswer(inv -> inv.getArgument(0));
-        when(convertUtil.convertOrderToDto(eq(httpRequest), any(Orders.class), any(OrderDetail.class)))
-                .thenReturn(mock(OrderResponse.class));
 
+        // 2 lần gọi liên tiếp như "double click"
+        orderService.createOrderByCourseID(httpRequest, course.getId());
         orderService.createOrderByCourseID(httpRequest, course.getId());
 
-        WebToeicException ex = assertThrows(WebToeicException.class,
-                () -> orderService.createOrderByCourseID(httpRequest, course.getId()));
-        assertEquals(ResponseCode.EXISTED, ex.getResponseCode());
-        assertEquals(ResponseObject.ORDER, ex.getResponseObject());
-
+        // Spec: sau khi có idempotency, orderRepository.save chỉ được gọi 1 lần.
         verify(orderRepository, times(1)).save(any(Orders.class));
     }
 

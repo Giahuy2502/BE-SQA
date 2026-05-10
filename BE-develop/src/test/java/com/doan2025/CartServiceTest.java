@@ -1,4 +1,4 @@
-package com.doan2025.webtoeic.service.impl;
+package com.doan2025;
 
 import com.doan2025.webtoeic.constants.enums.ERole;
 import com.doan2025.webtoeic.constants.enums.ResponseCode;
