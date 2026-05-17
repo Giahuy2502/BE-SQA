@@ -203,6 +203,14 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <!-- Surefire: Byte Buddy chưa “chính thức” hỗ trợ JDK mới nhất → Mockito cần cờ experimental (vd. Java 24). @{argLine} gộp với agent JaCoCo. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>@{argLine} -Dnet.bytebuddy.experimental=true</argLine>
+                </configuration>
+            </plugin>
             <!-- JaCoCo for Code Coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>

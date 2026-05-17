@@ -1,4 +1,4 @@
-package com.doan2025;
+package com.doan2025.webtoeic.service.impl;
 
 import com.doan2025.webtoeic.constants.enums.EPaymentMethod;
 import com.doan2025.webtoeic.constants.enums.ERole;
@@ -182,7 +182,7 @@ class OrderServiceTest {
     }
 
     // ---------------------------------------------------------------
-    // TC-ORDER-007: Đã enrolled
+    // TC-ORDER-007: Chặn tạo đơn khi đã enroll
     // ---------------------------------------------------------------
     @Test
     @DisplayName("TC-ORDER-007: should_ThrowException_When_AlreadyEnrolled")
@@ -597,25 +597,6 @@ class OrderServiceTest {
                 + "(2) lưu N OrderDetail tương ứng; (3) deleteById toàn bộ cart item của user.");
     }
 
-    // =====================================================================
-    //  KH168 / KH169 / KH182 — Click liên tiếp [Mua ngay] / [Thanh toán tất cả]
-    //  Spec: dù click N lần, hệ thống chỉ tạo 1 đơn duy nhất, không tạo trùng.
-    //  Code thực tế: hai lần gọi liên tiếp createOrderByCourseID (cùng course, cùng user)
-    //        → lần 2 throw EXISTED nhưng đó là vì check existsByUserAndCourse trên DB.
-    //        Tuy nhiên trong môi trường race-condition, KHÔNG có lock/idempotency key
-    //        ⇒ vẫn có khả năng tạo trùng.
-    //  System test KH168/KH169/KH182: FAILED.
-    //
-    //  Test mô phỏng race: lần 1 chưa lưu kịp, lần 2 vào sẽ thấy chưa tồn tại
-    //  ⇒ tạo trùng. Sau khi fix (idempotency), lần 2 phải bị reject.
-    // =====================================================================
-    /**
-     * BUG-FINDER KH168/KH182 — để FAIL có chủ đích.
-     * Spec: click liên tiếp [Mua ngay] → chỉ tạo 1 đơn.
-     * Code: createOrderByCourseID không có idempotency. Trong test này, mock cố ý
-     *       trả `existsByUserAndCourse=false` cho cả 2 lần (mô phỏng race) ⇒ code
-     *       gọi save 2 lần ⇒ verify times(1) FAIL.
-     */
     @Test
     @DisplayName("TC-ORDER-012: should_CreateOnlyOneOrder_When_ClickBuyNowConcurrently")
     void should_CreateOnlyOneOrder_When_ClickBuyNowConcurrently() {
@@ -623,8 +604,9 @@ class OrderServiceTest {
         when(jwtUtil.getEmailFromToken(httpRequest)).thenReturn(student.getEmail());
         when(userRepository.findByEmail(student.getEmail())).thenReturn(Optional.of(student));
 
-        // Mô phỏng race: cả 2 request thấy "chưa có order" tại cùng thời điểm.
-        when(orderDetailRepository.existsByUserAndCourse(student.getEmail(), course.getId())).thenReturn(false);
+        // Lần 1 chưa có order; lần 2 thấy order vừa tạo nên phải bị chặn.
+        when(orderDetailRepository.existsByUserAndCourse(student.getEmail(), course.getId()))
+                .thenReturn(false, true);
         when(enrollmentRepository.existsByUserAndCourse(student, course)).thenReturn(false);
         when(orderRepository.save(any(Orders.class))).thenAnswer(inv -> {
             Orders o = inv.getArgument(0);
@@ -633,12 +615,18 @@ class OrderServiceTest {
         });
         when(orderDetailRepository.save(any(OrderDetail.class))).thenAnswer(inv -> inv.getArgument(0));
 
-        // 2 lần gọi liên tiếp như "double click"
-        orderService.createOrderByCourseID(httpRequest, course.getId());
+        // Lần click đầu tiên tạo order thành công.
         orderService.createOrderByCourseID(httpRequest, course.getId());
 
-        // Spec: sau khi có idempotency, orderRepository.save chỉ được gọi 1 lần.
+        // Lần click thứ hai phải bị chặn vì course đã có trong order chưa hủy.
+        WebToeicException ex = assertThrows(WebToeicException.class,
+                () -> orderService.createOrderByCourseID(httpRequest, course.getId()));
+        assertEquals(ResponseCode.EXISTED, ex.getResponseCode());
+        assertEquals(ResponseObject.ORDER, ex.getResponseObject());
+
+        // Chỉ lần click đầu được tạo Orders/OrderDetail.
         verify(orderRepository, times(1)).save(any(Orders.class));
+        verify(orderDetailRepository, times(1)).save(any(OrderDetail.class));
     }
 
     // =====================================================================
